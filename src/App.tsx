@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import { useTranslation } from "react-i18next";
+import { Toolbar } from "./components/Toolbar";
 
 export const Homepage = () => {
   return <div>Homepage</div>;
@@ -15,8 +16,12 @@ function App() {
 
   return (
     <div>
-      <h1>{t("appName")}</h1>
-      <Outlet />
+      <Toolbar />
+      <main>
+        <h1>{t("appName")}</h1>
+        <Outlet />
+      </main>
+      <footer></footer>
     </div>
   );
 }

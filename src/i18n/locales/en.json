@@ -1,0 +1,40 @@
+{
+    "answerScale": {
+        "agree": "Someqhqt agree",
+        "disagree": "Somewhat disagree",
+        "strongAgree": "Completely agree",
+        "strongDisagree": "Completely disagree"
+    },
+    "appName": "Vaalikone",
+    "candidates": "Candidates",
+    "electionName": "2024 Programming Language Election",
+    "frontPage": {
+        "start": "Start",
+        "subtitle": "The programming language election is on the way. Find out more about the candidates with the election compass.",
+        "title": "Welcome to the election compass!"
+    },
+    "navigation": {
+        "frontPage": "Front page",
+        "menu": "Menu",
+        "search": "Search"
+    },
+    "question": {
+        "hide": "Hide question",
+        "no": "No",
+        "whatAbout": "What's this about?",
+        "yes": "Yes"
+    },
+    "questionPage": {
+        "description": "Find the most suitable candidate by considering the statements below. For help, try the \"What's this all about?\" icon.",
+        "findYourCandidate": "Find your candidate"
+    },
+    "revealResults": {
+        "seeResults": "See results",
+        "subtitle": "On the next page you can find out more about the candidates",
+        "title": "All done!"
+    },
+    "shareOnline": {
+        "subtitle": "Tell your friends about the compass",
+        "title": "Share the election compass"
+    }
+}

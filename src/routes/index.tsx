@@ -1,4 +1,4 @@
-import { RouteObject, createBrowserRouter, useRoutes } from "react-router-dom";
+import { RouteObject, createBrowserRouter } from "react-router-dom";
 import App, { Homepage, QuestionsPage } from "../App";
 
 export enum Route {
