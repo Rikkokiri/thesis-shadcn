@@ -19,13 +19,13 @@ export const useAnswerStore = create<AnswerState>()(
       setAnswer: (answer: Answer) =>
         set((state) => ({
           answers: state.answers.map((a) =>
-            a.questionId === answer.questionId ? answer : a
+            a.questionId === answer.questionId ? answer : a,
           ),
         })),
     }),
     {
       name: "vaalikone-answers", // name of the item in the storage (must be unique)
       storage: createJSONStorage(() => sessionStorage),
-    }
-  )
+    },
+  ),
 );

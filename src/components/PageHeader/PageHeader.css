@@ -1,0 +1,19 @@
+.page-header {
+  padding: var(--spacing-2);
+  text-align: center;
+}
+
+.page-header_title {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  font-weight: 900;
+  margin: 0;
+}
+
+.page-header_desc {
+  line-height: 1.5;
+  max-width: 680px;
+  /* TODO: Use variable */
+  margin: 8px var(--spacing);
+  /* TODO: Use variable */
+}

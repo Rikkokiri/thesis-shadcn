@@ -1,0 +1,49 @@
+.row_centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; /* TODO: Use a variable */
+  margin-bottom: 1.5rem;
+  padding: 5rem 1.5rem;
+  /* TODO: Use variable */
+  border-radius: 4px;
+  max-width: 680px;
+}
+
+.card_header {
+  gap: 1.5rem; /* TODO: Use variable */
+}
+
+.category {
+  /* TODO: Define typography style? */
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.question {
+  font-weight: 900;
+  font-size: 24px;
+  max-width: 343px;
+}
+
+.info-buttons {
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.answer_buttons {
+  gap: 2.4rem;
+  margin-top: 4rem;
+}
+
+.answer_radio {
+  padding-top: 8px; /* TODO: Use variable */
+}
