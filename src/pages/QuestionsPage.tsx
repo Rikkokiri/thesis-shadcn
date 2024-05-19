@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./QuestionsPage.css";
-import { QuestionCard } from "../components/QuestionCard/QuestionCard";
 import { Button } from "../components/Button/Button";
 import { FiArrowDown } from "react-icons/fi";
+import { QuestionForm } from "../features/questionsForm";
 
 export const QuestionsPage = () => {
   const { t } = useTranslation();
@@ -20,20 +20,7 @@ export const QuestionsPage = () => {
         </Button>
       </section>
       <div className="question-page__content">
-        <QuestionCard
-          title="Question 1"
-          category="Category 1"
-          number={1}
-          questionType="yes-no"
-          questionCount={2}
-        />
-        <QuestionCard
-          title="Question 2"
-          category="Category 2"
-          number={2}
-          questionType="radio"
-          questionCount={2}
-        />
+        <QuestionForm />
       </div>
     </>
   );

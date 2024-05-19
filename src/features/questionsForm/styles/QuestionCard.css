@@ -32,6 +32,7 @@
   font-weight: 900;
   font-size: 24px;
   max-width: 343px;
+  text-align: center;
 }
 
 .info-buttons {
@@ -40,8 +41,8 @@
 }
 
 .answer_buttons {
-  gap: 2.4rem;
-  margin-top: 4rem;
+  gap: 24px; /* TODO: Use variable */
+  margin-top: 40px;
 }
 
 .answer_radio {

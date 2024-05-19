@@ -1,14 +1,14 @@
 import "./RadioRange.css";
 
 interface RadioOption {
-  value: string;
+  value: number;
   label: string;
 }
 
 interface RadioRangeProps {
   options: RadioOption[];
-  value: string | undefined;
-  onChange: (value: string) => void;
+  value: number | undefined;
+  onChange: (value: number) => void;
 }
 
 export const RadioRange = (props: RadioRangeProps) => {

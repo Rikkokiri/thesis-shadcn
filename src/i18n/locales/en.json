@@ -7,10 +7,10 @@
   },
   "appName": "Vaalikone",
   "candidates": "Candidates",
-  "electionName": "2024 Programming Language Election",
+  "electionName": "2024 Component Library Election",
   "frontPage": {
     "start": "Start",
-    "subtitle": "The programming language election is on the way. Find out more about the candidates with the election compass.",
+    "subtitle": "The React component library election is on the way. Find out more about the candidates with the election compass.",
     "title": "Welcome to the election compass!"
   },
   "navigation": {
