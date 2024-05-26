@@ -1,0 +1,87 @@
+.button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 100px;
+  gap: 8px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* TODO: Define as base style? */
+.button:focus-visible {
+  outline: 2px solid #131415;
+  outline-offset: 2px;
+}
+
+.button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.button span {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+* Button sizing
+*/
+.button--medium {
+  font-size: 1rem;
+  height: 48px;
+  padding: 4px 16px;
+}
+
+.button--small {
+  font-size: 12px;
+  line-height: 18px;
+  height: 32px;
+  padding: 6px 12px 6px 14px;
+}
+
+.button--small svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+/**
+ * Button variant styles
+ */
+
+.button--solid {
+  background-color: rgb(19, 20, 21);
+  color: rgb(248, 249, 250);
+}
+
+.button--solid:hover {
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* TODO: Define as variable */
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 2px solid rgb(19, 20, 21);
+  color: rgb(19, 20, 21);
+}
+
+.button--outline:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+  border: 2px solid rgb(19, 20, 21);
+  outline: none;
+}
+
+.button--ghost {
+  border: none;
+  background-color: transparent;
+}
+
+.button--ghost:hover {
+  background-color: transparent;
+}
