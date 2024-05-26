@@ -1,8 +1,25 @@
-/*
-font-size: 28px;
-color: rgb(26, 43, 74);
-font-family: "Yle Next";
-text-align: center;
-line-height: 130%;
-font-weight: 900;
-*/
+.heading-1 {
+  font-size: 28px;
+  color: var(--heading-primary);
+  line-height: 130%;
+  font-weight: 900;
+}
+
+.heading-1-larger {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--heading-primary);
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--heading-primary);
+}
+
+.body-bold {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}

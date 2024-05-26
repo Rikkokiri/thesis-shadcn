@@ -1,34 +1,36 @@
-import { Button, ButtonSize, ButtonVariant } from "../Button/Button";
+import { Button, ButtonVariant, ISharedButtonProps } from "../Button/Button";
 import "./ToggleButton.css";
 
 type ToggleButtonVariant = Extract<ButtonVariant, "outline" | "ghost">;
 
-interface IToggleButtonProps {
-  children?: React.ReactNode;
+interface IToggleButtonProps extends ISharedButtonProps {
   isToggled: boolean;
-  toggle: () => void;
   untoggledIcon?: JSX.Element;
   toggledIcon?: JSX.Element;
   variant?: ToggleButtonVariant;
-  size?: ButtonSize;
 }
 
 export const ToggleButton = ({
   children,
   isToggled,
-  toggle,
+  isDisabled,
+  onClick,
   untoggledIcon,
   toggledIcon,
   variant = "outline",
   size,
+  iconSize,
+  className,
 }: IToggleButtonProps) => {
   return (
     <Button
-      onClick={toggle}
+      onClick={onClick}
       iconBefore={isToggled ? toggledIcon : untoggledIcon}
-      className={`toggle-button ${isToggled ? "toggled" : ""}`}
+      className={`toggle-button ${isToggled ? "toggled" : ""} ${className || ""}`}
       variant={variant}
       size={size}
+      isDisabled={isDisabled}
+      iconSize={iconSize}
     >
       {children}
     </Button>

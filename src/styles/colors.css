@@ -1,51 +1,38 @@
 :root {
-  /* Light theme */
-  --red: #d72a56;
-  --green: #058657;
-  --candiate-number: rgb(19, 20, 21);
-  /*
-  - #F1F2F4
-  - #E8E9EB (background)
-  - #D8D9DB // Radio button backgrounds
-  - #1A2B4A // Question page title
-  - #131415 // primary text
-  - #F8F9FA 
-  */
+  --dark-blue: #1a2b4a;
+  --blue-black: #131415; /* rgb(19, 20, 21); */
+  --yle-logo: #00b4c8;
 
-  /* #F1F2F4 */ /* Candidate image */
-  --error: #e90e43;
-  /* --success: */
-  --primary: #131415;
-  --black: #000;
-  --off-white: #f8f9fa;
-  --white: #fff;
-  /*
-  
-Dark theme:
-- #4A4F54
-- #1F2123
-- #131415
-- #131415
-  */
+  /* Grayscale */
+  --gray-5: #f8f9fa; /* rgb(248, 249, 250) */
+  --gray-10: #f1f2f4;
+  --gray-20: #e8e9eb;
+  --gray-30: #d8d9db;
+  --gray-40: #b4b6b7;
+  --gray-50: #949697;
+  --gray-60: #4a4f54;
+  --gray-70: #323639;
+  --gray-80: #292b2d;
+  --gray-90: #1f2123;
+  --gray-95: #131415;
+  --black-9: rgba(0, 0, 0, 9%);
+  --black-15: rgba(0, 0, 0, 15%);
+  --black-70: rgba(0, 0, 0, 7%);
+  --white-17: rgba(255, 255, 255, 17%);
+  --white-21: rgba(255, 255, 255, 21%);
+  --white-71: rgba(255, 255, 255, 71%);
+
+  /* Semantic colors: light theme */
+  --error: #d72a56;
+  --success: #058657;
+
+  /* Semantic colors: dark theme */
+  --live-red: #e90e43;
+  --green-bright: #06b173;
+
+  /* Candidate colors */
+  --ant-blue: #1677ff;
+  --mantine-blue: #339af0;
+  --chakra-teal: #319795;
+  --shadcn-black: #18181b;
 }
-
-/* #131415 */
-/*
-bg: "#f1f2f4", // Also used for hidden match elements
-logo: "#00b4c8",
-black: "#131415", // TODO: Rename
-gray10: "#f1f2f4", // Light theme background
-gray5: "#f8f9fa", // Box background, footer background
-titleBlue: "#1A2B4A",
-// #F1F2F4
-// #E3E3E3
-// #E8E9EB
-// #D8D9DB // Radio button backgrounds
-// #1A2B4A // Question page title
-// #D72A56 // Radio button red
-// #D72A56 // Radio button green
-// Outline button hover: rgba(0, 0, 0, 0.09)
-// Solid button hover: rgba(0, 0, 0, 0.7)
-black9: "rgba(0, 0, 0, 0.09)",
-black70: "rgba(0, 0, 0, 0.7)",
-*/

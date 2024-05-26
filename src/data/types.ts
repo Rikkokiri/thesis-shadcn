@@ -1,4 +1,4 @@
-type LocalizedString = {
+export type LocalizedString = {
   en: string;
   fi: string | undefined;
 };
@@ -6,6 +6,18 @@ type LocalizedString = {
 export enum QuestionType {
   AGREE_SCALE = "agree-scale",
   YES_NO = "yes-no",
+}
+
+export enum YesNoAnswer {
+  YES = 5,
+  NO = 1,
+}
+
+export enum AgreeScaleAnswer {
+  STRONGLY_DISAGREE = 1,
+  DISAGREE = 2,
+  AGREE = 4,
+  STRONGLY_AGREE = 5,
 }
 
 export type Question = {

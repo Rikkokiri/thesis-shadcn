@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
 import "../styles/QuestionCard.css";
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
-import { RiThumbUpLine } from "react-icons/ri";
-import { RiThumbUpFill } from "react-icons/ri";
-import { RiThumbDownLine } from "react-icons/ri";
-import { RiThumbDownFill } from "react-icons/ri";
 import { FiInfo } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
 import { Tag } from "../../../components/Tag/Tag";
 import { Category, Question } from "@data/types";
 import { Answer } from "@stores/answerStore";
-import { RadioAnswer } from "./RadioAnswer";
-import { YesNoAnswer } from "./YesNoAnswer";
+import { RadioQuestion } from "./RadioQuestion";
+import { YesNoQuestion } from "./YesNoQuestion";
 
 interface ICardProps {
   category: Category;
@@ -36,22 +31,17 @@ export const QuestionCard = (props: ICardProps) => {
   const questionId = question.id;
   const questionNumber = category.position + question.position + 1;
 
-  useEffect(() => {
-    console.log("Answer changed to: ", answer);
-  }, [answer]);
-
   return (
     <section className="card">
-      <div className="row_centered card_header">
+      <div className="row-centered card__header">
         <Tag>{`${questionNumber}/${questionsCount}`}</Tag>
         <p className="category">{category.name.en}</p>
       </div>
       <h2 className="question">{question.question.en}</h2>
-      <div className="row_centered info-buttons">
+      <div className="row-centered info-buttons">
         {question.additionalInfo && (
           <ToggleButton
             isToggled={false}
-            toggle={() => {}}
             untoggledIcon={<FiInfo />}
             variant="ghost"
             size="small"
@@ -60,7 +50,7 @@ export const QuestionCard = (props: ICardProps) => {
           </ToggleButton>
         )}
         <ToggleButton
-          toggle={() => toggleQuestionHiding(question.id)}
+          onClick={() => toggleQuestionHiding(question.id)}
           isToggled={!!answer?.hideQuestion}
           untoggledIcon={<FiEyeOff />}
           toggledIcon={<FiEyeOff />}
@@ -71,14 +61,14 @@ export const QuestionCard = (props: ICardProps) => {
         </ToggleButton>
       </div>
       {question.questionType === "yes-no" ? (
-        <YesNoAnswer
+        <YesNoQuestion
           answerQuestion={answerQuestion}
           questionId={questionId}
           t={t}
           answer={answer?.answer ?? null}
         />
       ) : (
-        <RadioAnswer
+        <RadioQuestion
           questionId={questionId}
           answerQuestion={answerQuestion}
           t={t}

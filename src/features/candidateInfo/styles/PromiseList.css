@@ -1,0 +1,30 @@
+ol.promise-list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.promise-list__number {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  background: var(--tag-default-bg);
+  color: var(--text-negative);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.promise-list__li {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.promise-list__li-content {
+  padding-bottom: 5px;
+}

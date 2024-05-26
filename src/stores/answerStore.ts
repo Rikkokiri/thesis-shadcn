@@ -58,3 +58,9 @@ export const someAnswered = (): boolean => {
   const answers = useAnswerStore((state) => state.answers);
   return Object.values(answers).some((answer) => answer.answer !== null);
 };
+
+/**
+ * Get the answer for a question
+ */
+export const getAnswerByQuestionId = (questionId: number): Answer | undefined =>
+  useAnswerStore((state) => state.answers[questionId] || undefined);

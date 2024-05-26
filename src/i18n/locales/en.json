@@ -6,12 +6,22 @@
     "strongDisagree": "Completely disagree"
   },
   "appName": "Vaalikone",
+  "candidateDetails": {
+    "creator": "Creator",
+    "github": "Github",
+    "website": "Library website"
+  },
+  "candidateSections": {
+    "answers": "Candidate's answers",
+    "backgroundInfo": "Candidate's infromation",
+    "electionPromises": "Election promises"
+  },
   "candidates": "Candidates",
   "electionName": "2024 Component Library Election",
   "frontPage": {
     "start": "Start",
     "subtitle": "The React component library election is on the way. Find out more about the candidates with the election compass.",
-    "title": "Welcome to the election compass!"
+    "title": "Welcome to the election compass"
   },
   "navigation": {
     "frontPage": "Front page",
@@ -22,7 +32,8 @@
     "hide": "Hide question",
     "no": "No",
     "whatAbout": "What's this about?",
-    "yes": "Yes"
+    "yes": "Yes",
+    "yourAnswer": "Your answer"
   },
   "questionPage": {
     "description": "Find the most suitable candidate by considering the statements below. For help, try the \"What's this all about?\" icon.",
@@ -36,5 +47,7 @@
   "shareOnline": {
     "subtitle": "Tell your friends about the compass",
     "title": "Share the election compass"
-  }
+  },
+  "showFewer": "Show fewer",
+  "showMore": "Show more"
 }

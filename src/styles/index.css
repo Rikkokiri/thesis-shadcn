@@ -1,20 +1,18 @@
+@import "./colors.css";
 @import "./variables.css";
+@import "./reset.css";
 @import "./typography.css";
 @import "./layout.css";
-
-/* Styles from Vite setup: */
+@import "./utils.css";
+@import "./themes/light-theme.css";
+@import "./themes/dark-theme.css";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* TODO: Update font family */
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;  */
-
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,8 +21,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px; /* 14px in Yle's styles */
+  color: var(--text-primary);
   height: 100vh;
-  background-color: rgb(241, 242, 244);
+  background-color: var(--bg-primary);
 }
 
 #root {
@@ -44,16 +43,3 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

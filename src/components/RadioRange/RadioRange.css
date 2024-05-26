@@ -4,8 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  /* TODO: Use a variable */
-  max-width: 343px;
+  max-width: 343px; /* TODO: Use a variable */
 }
 
 /* Line behind radio options */
@@ -13,7 +12,7 @@
   content: " ";
   height: 0.25rem;
   width: calc(100% - 2rem);
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
   position: absolute;
   top: calc(2rem / 2 - 0.25rem / 2);
   left: 1rem;
@@ -23,15 +22,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: start;
+  place-items: center start;
   width: 2rem;
+  text-align: center;
 }
 
 .radio-range label {
   font-size: 0.75rem;
   margin-top: 0.75rem;
-  /* TODO: Align first label to left and last to right */
+}
+
+.radio-range__option:first-child {
+  text-align: left;
+}
+
+.radio-range__option:last-child {
+  text-align: right;
 }
 
 @keyframes scale-option {
@@ -51,11 +57,11 @@
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
   margin: 0;
 }
 
-.option__indicator {
+.radio-range .option__indicator {
   cursor: pointer;
   position: absolute;
   top: 0.25rem;
@@ -63,27 +69,26 @@
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
 }
 
-/* .option__indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  margin: 0.25rem;
-  background-color: red;
-} */
+.radio-range .disagree .option__indicator {
+  background-color: var(--disagree);
+}
 
-/* input:not(:checked)+.option__indicator {
-  background-color: #d8d9db;
-} */
+.radio-range .agree .option__indicator {
+  background-color: var(--agree);
+}
 
-input:checked + .option__indicator {
+.radio-range input:checked + .option__indicator {
   animation-name: scale-option;
   animation-duration: 0.3s;
   animation-iteration-count: 1;
   transition: background-color 0.3s ease 0s;
-  background-color: #d72a56;
-  outline: 0.25rem solid #d8d9db;
+  outline: 0.25rem solid var(--radio-background);
+}
+
+.radio-range input[type="radio"].readonly,
+.radio-range input[type="radio"].readonly + .option__indicator {
+  cursor: not-allowed;
 }

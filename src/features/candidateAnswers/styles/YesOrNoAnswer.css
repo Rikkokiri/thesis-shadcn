@@ -1,0 +1,30 @@
+.yes-or-no-answer__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 24px; /* TODO: Use variable */
+  position: relative;
+}
+
+.yes-or-no-answer__container:has(.user-answer-bubble) {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.yes-or-no-answer__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yes-or-no-answer__option button {
+  margin-top: 8px; /* TODO: Use a variable */
+}
+
+.yes-or-no-answer__option .user-answer-bubble {
+  --bubble-padding: 10px;
+
+  position: absolute;
+  bottom: calc(100% + var(--bubble-padding));
+}

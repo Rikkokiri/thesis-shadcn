@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Toolbar.css";
+import { Link } from "react-router-dom";
+import { Route } from "src/routes";
 
 export const Toolbar = () => {
   const { t } = useTranslation();
@@ -7,9 +9,11 @@ export const Toolbar = () => {
   return (
     <header className="toolbar">
       <nav className="toolbar__nav">
-        <div className="toolbar__logo">
-          <a href="#">{t("navigation.frontPage")}</a>
+        <div className="toolbar__logo-wrapper">
+          <div className="toolbar__logo"></div>
+          <Link to={Route.ROOT}>{t("navigation.frontPage")}</Link>
         </div>
+        {/*
         <ul className="toolbar__list">
           <li>
             <a href="#">{t("navigation.search")}</a>
@@ -18,6 +22,7 @@ export const Toolbar = () => {
             <span>{t("navigation.menu")}</span>
           </li>
         </ul>
+        */}
       </nav>
     </header>
   );

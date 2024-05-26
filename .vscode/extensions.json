@@ -2,6 +2,7 @@
   "recommendations": [
     "richie5um2.vscode-sort-json",
     "streetsidesoftware.code-spell-checker",
-    "ms-vscode.vscode-typescript-next"
+    "ms-vscode.vscode-typescript-next",
+    "simonsiefke.svg-preview"
   ]
 }

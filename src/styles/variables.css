@@ -2,5 +2,7 @@
   font-size: 16px;
 
   --spacing: 1rem;
-  --spacing-2: 2rem;
+
+  /* Border radius */
+  --border-radius-sm: 4px;
 }

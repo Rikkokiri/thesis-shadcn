@@ -2,14 +2,19 @@ import "./Button.css";
 
 export type ButtonVariant = "solid" | "outline" | "ghost";
 export type ButtonSize = "small" | "medium";
+type ButtonIconSize = 20 | 24;
 
-interface IButtonProps {
+export interface ISharedButtonProps {
   children?: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   isDisabled?: boolean;
-  variant?: ButtonVariant;
   className?: string;
   size?: ButtonSize;
+  iconSize?: ButtonIconSize;
+}
+
+interface IButtonProps extends ISharedButtonProps {
+  variant?: ButtonVariant;
   iconBefore?: JSX.Element;
   iconAfter?: JSX.Element;
 }
@@ -23,6 +28,7 @@ export const Button = ({
   className,
   iconBefore,
   iconAfter,
+  iconSize = 20,
 }: IButtonProps) => {
   return (
     <button
@@ -30,7 +36,21 @@ export const Button = ({
       className={`button button--${variant} ${className} button--${size}`}
       onClick={onClick}
     >
-      {iconBefore} <span>{children}</span> {iconAfter}
+      <ButtonIcon icon={iconBefore} iconSize={iconSize} />
+      <span className="button__content">{children}</span>{" "}
+      <ButtonIcon icon={iconAfter} iconSize={iconSize} />
     </button>
+  );
+};
+
+const ButtonIcon = (props: {
+  icon?: JSX.Element;
+  iconSize: ButtonIconSize;
+}) => {
+  if (!props.icon) return null;
+  return (
+    <span className={`icon icon-before icon-${props.iconSize}`}>
+      {props.icon}
+    </span>
   );
 };

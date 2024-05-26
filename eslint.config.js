@@ -1,11 +1,23 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
+import tsEslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 
 export default [
-  { languageOptions: { globals: globals.browser } },
+  {
+    ignores: ["dist/"],
+  },
+  {
+    settings: { react: { version: "detect" } },
+  },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tsEslint.configs.recommended,
   pluginReactConfig,
+  {
+    languageOptions: { globals: globals.browser },
+    rules: {
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+    },
+  },
 ];

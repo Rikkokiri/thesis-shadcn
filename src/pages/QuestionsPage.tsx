@@ -10,12 +10,13 @@ export const QuestionsPage = () => {
   return (
     <>
       <section className="question-page__header">
-        <p className="question-page__subtitle">{t("electionName")}</p>
-        <h1 className="pageheader_title">
+        <p className="subtitle m-0">{t("electionName")}</p>
+        <h1 className="heading-1 pageheader_title">
           {t("questionPage.findYourCandidate")}
         </h1>
         <p className="page-intro">{t("questionPage.description")}</p>
-        <Button onClick={() => {}} iconBefore={<FiArrowDown />}>
+        {/* TODO: Add onClick handler for button */}
+        <Button iconBefore={<FiArrowDown />} isDisabled>
           {t("questionPage.findYourCandidate")}
         </Button>
       </section>

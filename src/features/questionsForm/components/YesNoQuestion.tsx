@@ -4,33 +4,31 @@ import { RiThumbUpFill } from "react-icons/ri";
 import { RiThumbDownLine } from "react-icons/ri";
 import { RiThumbDownFill } from "react-icons/ri";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
+import { YesNoAnswer } from "@data/types";
 
-const YES = 5;
-const NO = 1;
-
-interface YesNoAnswerProps {
+interface YesNoQuestionProps {
   t: TFunction;
   questionId: number;
   answerQuestion: (questionId: number, answer: number) => void;
   answer: number | null;
 }
 
-export const YesNoAnswer = (props: YesNoAnswerProps) => {
+export const YesNoQuestion = (props: YesNoQuestionProps) => {
   const { answer, answerQuestion, questionId, t } = props;
 
   return (
-    <div className="row_centered answer_buttons">
+    <div className="row-centered answer__buttons">
       <ToggleButton
-        isToggled={answer === YES}
-        toggle={() => answerQuestion(questionId, YES)}
+        isToggled={answer === YesNoAnswer.YES}
+        onClick={() => answerQuestion(questionId, YesNoAnswer.YES)}
         untoggledIcon={<RiThumbUpLine />}
         toggledIcon={<RiThumbUpFill />}
       >
         {t("question.yes")}
       </ToggleButton>
       <ToggleButton
-        isToggled={answer === NO}
-        toggle={() => answerQuestion(questionId, NO)}
+        isToggled={answer === YesNoAnswer.NO}
+        onClick={() => answerQuestion(questionId, YesNoAnswer.NO)}
         untoggledIcon={<RiThumbDownLine />}
         toggledIcon={<RiThumbDownFill />}
       >
