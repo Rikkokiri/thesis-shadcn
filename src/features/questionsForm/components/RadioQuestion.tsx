@@ -1,14 +1,14 @@
 import { RadioRange } from "@components/RadioRange/RadioRange";
 import { TFunction } from "i18next";
 
-interface RadioQuestionProps {
+interface IRadioQuestionProps {
   t: TFunction;
   value: number | null;
   questionId: number;
   answerQuestion: (questionId: number, answer: number) => void;
 }
 
-export const RadioQuestion = (props: RadioQuestionProps) => {
+export const RadioQuestion = (props: IRadioQuestionProps) => {
   const { t, value, questionId, answerQuestion } = props;
 
   return (

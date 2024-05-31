@@ -6,7 +6,6 @@ import "../styles/QuestionsForm.css";
 export const QuestionsList = (props: IQuestionsForm) => {
   const { categoriesAndQuestions, questionsTotalCount, answers } = props;
 
-  /* TODO: Use utility class to get list to 100 % width */
   return (
     <section className="questions-list">
       {categoriesAndQuestions.map((category) => (
@@ -24,6 +23,7 @@ export const QuestionsList = (props: IQuestionsForm) => {
           ))}
         </article>
       ))}
+      {/* TODO: Link to results page */}
     </section>
   );
 };

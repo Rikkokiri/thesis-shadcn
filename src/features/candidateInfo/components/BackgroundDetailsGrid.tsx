@@ -20,10 +20,10 @@ export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
     <InfoGrid>
       <InfoGridRow>
         <InfoGridItem className="body-bold">
-          {t("candidateDetails.website")}
+          {t("candidate.website")}
         </InfoGridItem>
         <InfoGridItem>
-          <a href={candidate.website?.url}>
+          <a href={candidate.website?.url} target="_blank" rel="noreferrer">
             {candidate.website?.text
               ? localize(candidate.website?.text)
               : candidate.website?.url}

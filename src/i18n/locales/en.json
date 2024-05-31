@@ -6,9 +6,12 @@
     "strongDisagree": "Completely disagree"
   },
   "appName": "Vaalikone",
-  "candidateDetails": {
+  "candidate": {
+    "createdBy": "By",
     "creator": "Creator",
+    "getToKnow": "Get to know the candidate",
     "github": "Github",
+    "number": "No.",
     "website": "Library website"
   },
   "candidateSections": {
@@ -17,7 +20,11 @@
     "electionPromises": "Election promises"
   },
   "candidates": "Candidates",
+  "closeModal": "Close modal",
   "electionName": "2024 Component Library Election",
+  "footer": {
+    "frontPageLink": "Front page"
+  },
   "frontPage": {
     "start": "Start",
     "subtitle": "The React component library election is on the way. Find out more about the candidates with the election compass.",

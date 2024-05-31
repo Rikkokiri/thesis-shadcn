@@ -1,7 +1,7 @@
 import "./Button.css";
 
 export type ButtonVariant = "solid" | "outline" | "ghost";
-export type ButtonSize = "small" | "medium";
+export type ButtonSize = "small" | "medium" | "icon-only";
 type ButtonIconSize = 20 | 24;
 
 export interface ISharedButtonProps {
@@ -37,7 +37,7 @@ export const Button = ({
       onClick={onClick}
     >
       <ButtonIcon icon={iconBefore} iconSize={iconSize} />
-      <span className="button__content">{children}</span>{" "}
+      {children && <span className="button__content">{children}</span>}
       <ButtonIcon icon={iconAfter} iconSize={iconSize} />
     </button>
   );

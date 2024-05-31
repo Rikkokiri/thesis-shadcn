@@ -1,13 +1,13 @@
 import "../styles/QuestionCard.css";
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
-import { FiInfo } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
 import { Tag } from "../../../components/Tag/Tag";
 import { Category, Question } from "@data/types";
 import { Answer } from "@stores/answerStore";
 import { RadioQuestion } from "./RadioQuestion";
 import { YesNoQuestion } from "./YesNoQuestion";
+import { AdditionalInfo } from "./AdditionalInfo";
 
 interface ICardProps {
   category: Category;
@@ -40,14 +40,7 @@ export const QuestionCard = (props: ICardProps) => {
       <h2 className="question">{question.question.en}</h2>
       <div className="row-centered info-buttons">
         {question.additionalInfo && (
-          <ToggleButton
-            isToggled={false}
-            untoggledIcon={<FiInfo />}
-            variant="ghost"
-            size="small"
-          >
-            {t("question.whatAbout")}
-          </ToggleButton>
+          <AdditionalInfo t={t} info={question.additionalInfo} />
         )}
         <ToggleButton
           onClick={() => toggleQuestionHiding(question.id)}

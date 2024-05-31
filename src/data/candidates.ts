@@ -8,8 +8,9 @@ export type ExternalLink = {
 export type Candidate = {
   id: string;
   name: string;
+  number: number;
   logoSrc: string;
-  candidateNumber?: number;
+  brandColor: string;
   creator: string;
   organization?: string;
   numberOfComponents?: number;
@@ -24,7 +25,9 @@ export type Candidate = {
 const AntDesign: Candidate = {
   id: "ant",
   name: "Ant Design",
+  number: 2,
   logoSrc: "/logos/ant-logo.svg",
+  brandColor: "#1677ff",
   creator: "Ant Financial",
   website: {
     url: "https://ant.design/",
@@ -37,7 +40,9 @@ const AntDesign: Candidate = {
 const ChakraUI: Candidate = {
   id: "chakra",
   name: "Chakra UI",
-  logoSrc: "/logos/chakra.svg",
+  number: 3,
+  logoSrc: "/logos/chakra-logo.svg",
+  brandColor: "#319795",
   creator: "Segun Adebayo",
   website: {
     url: "https://v2.chakra-ui.com/",
@@ -60,7 +65,9 @@ const ChakraUI: Candidate = {
 const Mantine: Candidate = {
   id: "mantine",
   name: "Mantine",
+  number: 4,
   logoSrc: "/logos/mantine-logo.svg",
+  brandColor: "#339af0",
   creator: "Vitaly Rtishchev",
   website: {
     url: "https://mantine.dev/",
@@ -83,7 +90,9 @@ const Mantine: Candidate = {
 const shadcnui: Candidate = {
   id: "shadcnui",
   name: "shadcn/ui",
+  number: 5,
   logoSrc: "/logos/shadcn-logo.svg",
+  brandColor: "#18181b",
   creator: "shadcn",
   website: {
     url: "https://ui.shadcn.com/",

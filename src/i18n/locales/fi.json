@@ -1,0 +1,60 @@
+{
+  "answerScale": {
+    "agree": "Jokseenkin samaa mieltä",
+    "disagree": "Jokseenkin eri mieltä",
+    "strongAgree": "Täysin samaa mieltä",
+    "strongDisagree": "Täysin eri mieltä"
+  },
+  "appName": "Vaalikone",
+  "candidate": {
+    "createdBy": "Luonut",
+    "creator": "Tekijä",
+    "getToKnow": "Tutustu ehdokkaaseen",
+    "github": "Github",
+    "number": "N:o",
+    "website": "Kirjaston verkkosivu"
+  },
+  "candidateSections": {
+    "answers": "Candidate's answers",
+    "backgroundInfo": "Candidate's infromation",
+    "electionPromises": "Vaalilupaukset"
+  },
+  "candidates": "Ehdokkaat",
+  "closeModal": "Sulje modaali",
+  "electionName": "2024 Komponenttikirjastovaalit",
+  "footer": {
+    "frontPageLink": "Vaalikoneen etusivu"
+  },
+  "frontPage": {
+    "start": "Aloita",
+    "subtitle": "React-komponenttikirjastojen  vaalit ovat käynnissä. Tutustu ehdokkaisiin vaalikoneen avulla.",
+    "title": "Terveteuloa vaalikoneeseen"
+  },
+  "navigation": {
+    "frontPage": "Etusivu",
+    "menu": "Valikko",
+    "search": "Hae"
+  },
+  "question": {
+    "hide": "Ohita kysymys",
+    "no": "Ei",
+    "whatAbout": "Mistä on kyse?",
+    "yes": "Kyllä",
+    "yourAnswer": "Sinun vastauksesi"
+  },
+  "questionPage": {
+    "description": "Löydä sopivin ehdokas ottamalla kantaa alla oleviin väitteisiin. Jos haluat apua, kokeile \"Mistä on kyse\" -painiketta.",
+    "findYourCandidate": "Find your candidate"
+  },
+  "revealResults": {
+    "seeResults": "Siirry tuloksiin",
+    "subtitle": "Seuraavalla sivulla pääset tutustumaan ehdokkaisiin tarkemmin",
+    "title": "Valmista tuli!"
+  },
+  "shareOnline": {
+    "subtitle": "Kerro vaalikoneesta kaverillesi",
+    "title": "Vinkkaa vaalikoneesta"
+  },
+  "showFewer": "Näytä vähemmän",
+  "showMore": "Näytä lisää"
+}

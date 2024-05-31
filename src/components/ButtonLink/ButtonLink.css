@@ -1,4 +1,4 @@
-.button {
+.btn-link {
   display: inline-flex;
   position: relative;
   align-items: center;
@@ -8,101 +8,87 @@
   border-radius: 100px;
   gap: 8px;
   cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
 }
 
-.button:focus {
+.btn-link:focus {
   outline: none;
 }
 
 /* TODO: Define as base style? */
-.button:focus-visible {
+.btn-link:focus-visible {
   outline: 2px solid var(--focus-outline-primary);
   outline-offset: 2px;
 }
 
-.button .icon.icon-20 {
+.btn-link .icon.icon-20 {
   height: 20px;
   width: 20px;
 }
 
-.button .icon.icon-24 {
+.btn-link .icon.icon-24 {
   height: 24px;
   width: 24px;
 }
 
-.button .icon > * {
+.btn-link .icon > * {
   height: 100%;
   width: 100%;
 }
 
-.button .button__content {
+.btn-link .btn-link__content {
   padding: 0;
   margin: 0;
 }
 
 /**
-* Button sizing
+* Button link sizing
 */
-.button--medium {
+.btn-link--medium {
   font-size: 1rem;
   height: 48px;
   padding: 4px 16px;
 }
 
-.button--small {
+.btn-link--small {
   font-size: 12px;
   line-height: 18px;
   height: 32px;
   padding: 6px 12px 6px 14px;
 }
 
-.button--small .icon {
+.btn-link--small .icon {
   height: 1rem;
   width: 1rem;
-}
-
-.button--icon-only {
-  padding: 0;
 }
 
 /**
  * Button variant styles
  */
 
-.button--solid {
+.btn-link--solid {
   background-color: var(--button-solid-bg);
   color: var(--text-negative);
   border-color: transparent;
 }
 
-.button--solid:hover {
+.btn-link--solid:hover {
   background-color: var(--button-solid-bg-hover);
 }
 
-.button--outline {
+.btn-link--outline {
   background-color: transparent;
   border: 2px solid var(--primary);
   color: var(--button-outline);
 }
 
-.button--outline:hover,
-.button--outline:disabled:hover {
+.btn-link--outline:hover {
   background-color: var(--button-outline-bg-hover);
-  border: 2px solid var(--primary);
   outline: none;
 }
 
-.button--outline:disabled {
+.btn-link--outline:disabled {
   border-color: var(--button-outline-disabled);
   cursor: not-allowed;
-}
-
-.button--ghost {
-  border: none;
-  background-color: transparent;
-  color: var(--primary-text);
-}
-
-.button--ghost:hover {
-  background-color: transparent;
 }

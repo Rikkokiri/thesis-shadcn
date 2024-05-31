@@ -13,7 +13,7 @@
   --button-solid-bg: var(--blue-black);
   --button-solid-bg-hover: var(--black-70);
   --button-outline: var(--blue-black);
-  --button-outline-hover: var(--black-9);
+  --button-outline-bg-hover: var(--black-9);
   --button-outline-disabled: var(--black-15);
   --button-solid-hover: var(--black-70);
   --button-toggled-bg: var(--black-9);
@@ -21,6 +21,11 @@
   /* Radio buttons */
   --radio-button-agree: var(--success);
   --radio-background: var(--gray-30);
+
+  /* Modals */
+  --modal-backdrop: var(--black-41);
+  --modal-bg: #fff;
+  --modal-box-shadow: rgba(0, 0, 0, 16%) 0 3px 6px, rgba(0, 0, 0, 23%) 0 3px 6px;
 
   /* Agree and disagree bg colors */
   --agree: var(--success);
@@ -40,4 +45,7 @@
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--gray-5);
   --separator: var(--gray-30);
+
+  /* Match results */
+  --match-placeholder-bg: var(--gray-10);
 }

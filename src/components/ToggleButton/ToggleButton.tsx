@@ -8,6 +8,7 @@ interface IToggleButtonProps extends ISharedButtonProps {
   untoggledIcon?: JSX.Element;
   toggledIcon?: JSX.Element;
   variant?: ToggleButtonVariant;
+  toggledClassName?: string;
 }
 
 export const ToggleButton = ({
@@ -21,12 +22,13 @@ export const ToggleButton = ({
   size,
   iconSize,
   className,
+  toggledClassName = "toggled",
 }: IToggleButtonProps) => {
   return (
     <Button
       onClick={onClick}
       iconBefore={isToggled ? toggledIcon : untoggledIcon}
-      className={`toggle-button ${isToggled ? "toggled" : ""} ${className || ""}`}
+      className={`toggle-button ${isToggled ? toggledClassName : ""} ${className || ""}`}
       variant={variant}
       size={size}
       isDisabled={isDisabled}

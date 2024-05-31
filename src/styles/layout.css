@@ -16,3 +16,11 @@
   align-items: center;
   width: 100%;
 }
+
+.column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

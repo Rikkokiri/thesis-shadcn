@@ -1,0 +1,67 @@
+.candidate-modal__body {
+  display: flex;
+  width: 100%;
+}
+
+.candidate-modal__actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px; /* TODO: Use a variable */
+}
+
+.candidate-modal__img {
+  flex-shrink: 0;
+  background-color: rgb(241, 242, 244); /* TODO: Use a themed variable */
+  border-radius: var(--border-radius-sm);
+  width: 64px;
+  height: 85px;
+  padding: 4px;
+}
+
+.candidate-modal__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.candidate-modal__score {
+  /* TODO: Use a font style class */
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+  margin: 4px 0 0;
+}
+
+/* Scaled "bar graph" to visual match percentage */
+.candidate-modal__score-visual {
+  height: 4px;
+  border-radius: 19px;
+  margin-top: 4px;
+  background: rgb(156, 172, 181); /* TODO: Fallback color */
+  margin-right: auto;
+}
+
+.candidate-modal__details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 18px; /* TODO: Use a variable */
+}
+
+.candidate-modal__name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.body-small.candidate-modal__number {
+  margin-top: 10px;
+  font-weight: 700;
+}

@@ -1,6 +1,9 @@
 :root {
   font-size: 16px;
 
+  --toolbar-height: 72px;
+
+  /* Spacing */
   --spacing: 1rem;
 
   /* Border radius */

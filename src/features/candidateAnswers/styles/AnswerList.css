@@ -22,5 +22,5 @@
 }
 
 .answer-list__expand-button:hover {
-  background-color: var(--button-outline-hover);
+  background-color: var(--button-outline-bg-hover);
 }

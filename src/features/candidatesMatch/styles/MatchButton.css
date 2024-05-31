@@ -1,0 +1,39 @@
+/* TODO: Border on focus */
+
+.match-result {
+  height: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.match-result__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.match-result__img {
+  border-radius: var(--border-radius-sm);
+  flex-shrink: 0;
+  width: 32px;
+  height: 43px;
+  padding: 3px;
+  background-color: rgb(241, 242, 244); /* TODO: Use a themed variable */
+}
+
+.match-result__score {
+  /* TODO: Use a font style class */
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+}

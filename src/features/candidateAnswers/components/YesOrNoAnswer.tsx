@@ -7,7 +7,7 @@ import { YesNoAnswer, QuestionType } from "@data/types";
 import { SmallSpeechBubble } from "./SmallSpeechBubble";
 import { CandidateIndicator } from "./CandidateIndicator";
 
-interface YesNoAnswerProps {
+interface IYesNoAnswerProps {
   t: TFunction;
   questionId: number;
   candidateAnswer: number | null;
@@ -20,7 +20,7 @@ type AnswerOption = {
   label: string;
 };
 
-export const YesOrNoAnswer = (props: YesNoAnswerProps) => {
+export const YesOrNoAnswer = (props: IYesNoAnswerProps) => {
   const { t, userAnswer, candidateAnswer, candidateImgSrc } = props;
   const options: AnswerOption[] = [
     {

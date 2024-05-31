@@ -6,14 +6,14 @@ import { RiThumbDownFill } from "react-icons/ri";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { YesNoAnswer } from "@data/types";
 
-interface YesNoQuestionProps {
+interface IYesNoQuestionProps {
   t: TFunction;
   questionId: number;
   answerQuestion: (questionId: number, answer: number) => void;
   answer: number | null;
 }
 
-export const YesNoQuestion = (props: YesNoQuestionProps) => {
+export const YesNoQuestion = (props: IYesNoQuestionProps) => {
   const { answer, answerQuestion, questionId, t } = props;
 
   return (

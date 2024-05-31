@@ -1,14 +1,14 @@
 import { DisplayRadioRange } from "./DisplayRadioRange";
 import { TFunction } from "i18next";
 
-interface RadioAnswerProps {
+interface IRadioAnswerProps {
   t: TFunction;
   candidateAnswer: number | null;
   userAnswer: number | null;
   candidateImgSrc: string;
 }
 
-export const RadioAnswer = (props: RadioAnswerProps) => {
+export const RadioAnswer = (props: IRadioAnswerProps) => {
   const { t, candidateAnswer, userAnswer, candidateImgSrc } = props;
 
   return (

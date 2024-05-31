@@ -47,6 +47,10 @@ export const QUESTIONS: Question[] = [
     categoryId: 2,
     position: 0,
     questionType: QuestionType.YES_NO,
+    additionalInfo: {
+      en: "Som sample information that will be displayed to give context to this statement. It will be shown as a modal.",
+      fi: "Som sample information that will be displayed to give context to this statement. It will be shown as a modal.",
+    },
   },
   {
     id: 3,
