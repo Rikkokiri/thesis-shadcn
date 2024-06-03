@@ -10,14 +10,12 @@
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
-  border-bottom: 1px solid #fff; /* TODO: Check whether this matches themes? */
 }
 
 .toolbar__nav {
   max-width: 1080px; /* TODO: Use variable? */
   display: flex;
   flex-direction: row;
-  justify-self: space-between;
   align-items: center;
   justify-content: center;
   font-weight: 700;

@@ -1,5 +1,4 @@
 import { Button } from "@components/Button/Button";
-import "@components/PageHeader/PageHeader.css";
 import { SectionCard } from "@components/SectionCard.tsx/SectionCard";
 import { useAnswerStore } from "@stores/answerStore";
 import { useTranslation } from "react-i18next";

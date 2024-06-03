@@ -27,7 +27,6 @@ body {
 }
 
 #root {
-  flex: 1 1 auto;
   height: 100%;
 }
 
@@ -68,8 +67,9 @@ main {
   font-weight: 700;
 }
 
-/* TODO: Delete? */
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.page-header {
+  padding: 24px;
+  text-align: center;
+  background-color: var(--page-header-bg);
+  width: 100%;
 }

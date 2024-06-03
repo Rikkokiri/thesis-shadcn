@@ -21,7 +21,7 @@ export const QuestionsPage = () => {
       {inView && <CandidatesMatch />}
       <section className="question-page__header">
         <p className="subtitle m-0">{t("electionName")}</p>
-        <h1 className="heading-1 pageheader_title">
+        <h1 className="heading-1 question-page__title">
           {t("questionPage.findYourCandidate")}
         </h1>
         <p className="page-intro">{t("questionPage.description")}</p>

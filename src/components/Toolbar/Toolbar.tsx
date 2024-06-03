@@ -13,16 +13,6 @@ export const Toolbar = () => {
           <div className="toolbar__logo"></div>
           <Link to={Route.ROOT}>{t("navigation.frontPage")}</Link>
         </div>
-        {/*
-        <ul className="toolbar__list">
-          <li>
-            <a href="#">{t("navigation.search")}</a>
-          </li>
-          <li>
-            <span>{t("navigation.menu")}</span>
-          </li>
-        </ul>
-        */}
       </nav>
     </header>
   );
