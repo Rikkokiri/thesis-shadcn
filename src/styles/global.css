@@ -42,7 +42,8 @@
     /**
      * ---------------- Light (default) theme ----------------
      */
-    --background: var(--gray-10);
+    --body: var(--gray-10);
+    --background: var(--white);
     --foreground: var(--blue-black);
 
     --card: var(--white);
@@ -71,13 +72,16 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    /* Component colors */
   }
 
   /**
   * ---------------- Dark (default) theme ----------------
   */
   .dark {
-    --background: var(--black); /* 222.2 84% 4.9%; */
+    --body: var(--black);
+    --background: var(--blue-black); /* 222.2 84% 4.9%; */
     --foreground: var(--gray-5);
 
     --card: var(--blue-black);
@@ -112,6 +116,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-body text-foreground;
   }
 }

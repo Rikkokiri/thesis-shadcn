@@ -12,7 +12,7 @@ export const RadioQuestion = (props: IRadioQuestionProps) => {
   const { t, value, questionId, answerQuestion } = props;
 
   return (
-    <div className="row-centered answer__radio">
+    <div className="answer__radio flex flex-row justify-center items-center w-full pt-2">
       <RadioRange
         options={[
           {

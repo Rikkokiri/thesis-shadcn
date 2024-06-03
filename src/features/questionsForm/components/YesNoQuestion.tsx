@@ -17,7 +17,7 @@ export const YesNoQuestion = (props: IYesNoQuestionProps) => {
   const { answer, answerQuestion, questionId, t } = props;
 
   return (
-    <div className="row-centered gap-24 mt-40">
+    <div className="flex flex-row justify-center items-center w-full gap-6 mt-10">
       <ToggleButton
         isToggled={answer === YesNoAnswer.YES}
         onClick={() => answerQuestion(questionId, YesNoAnswer.YES)}

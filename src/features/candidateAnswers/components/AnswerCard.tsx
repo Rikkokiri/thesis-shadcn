@@ -1,6 +1,5 @@
 import "../styles/AnswerCard.css";
 import { useTranslation } from "react-i18next";
-import { Tag } from "../../../components/Tag/Tag";
 import { Question } from "@data/types";
 import { RadioAnswer } from "./RadioAnswer";
 import { YesOrNoAnswer } from "./YesOrNoAnswer";
@@ -8,6 +7,8 @@ import { CandidateAnswer } from "@data/candidateAnswers";
 import { CommentCard } from "./CommentCard";
 import { useLocalizedString } from "@hooks/useLocalizedString";
 import { getAnswerByQuestionId } from "@stores/answerStore";
+import { Badge } from "@components/ui/badge";
+import { Card, CardHeader } from "@components/ui/card";
 
 interface ICardProps {
   question: Question;
@@ -27,12 +28,14 @@ export const AnswerCard = (props: ICardProps) => {
     : undefined;
 
   const userAnswer = getAnswerByQuestionId(question.id);
-
+  {
+    /* <section className="answer-card"> */
+  }
   return (
-    <section className="answer-card">
-      <div className="row-centered card__header">
-        <Tag variant="negative">{`${question.position}/${questionsCount}`}</Tag>
-      </div>
+    <Card className="flex flex-col items-center p-6 max-w-[680px] w-full">
+      <CardHeader>
+        <Badge variant="secondary">{`${question.position}/${questionsCount}`}</Badge>
+      </CardHeader>
       <h2 className="question">{question.question.en}</h2>
       {question.questionType === "yes-no" ? (
         <YesOrNoAnswer
@@ -58,6 +61,6 @@ export const AnswerCard = (props: ICardProps) => {
           answer={candidateAnswer?.answer}
         />
       )}
-    </section>
+    </Card>
   );
 };

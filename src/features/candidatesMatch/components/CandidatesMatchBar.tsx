@@ -1,4 +1,4 @@
-import "../styles/CandidatesMatchBar.css";
+// import "../styles/CandidatesMatchBar.css";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { useState } from "react";
 import { FiEyeOff } from "react-icons/fi";
@@ -18,9 +18,9 @@ export const CandidatesMatchBar = (
   }
 
   return (
-    <header className="match-bar">
-      <div className="match-bar__content">
-        <div className="match-bar__matches">
+    <header className="match-bar fixed z-50 top-0 flex flex-col items-center justify-center h-[76px] w-full">
+      <div className="flex flex-row items-center w-full max-w-[520px]">
+        <div className="flex flex-row w-full justify-evenly items-center p-0 pt-1">
           {resultsHidden || !topFourCandidates
             ? [...Array(topCount).keys()].map((index) => (
                 <MatchPlaceholder key={index} />
@@ -47,7 +47,7 @@ export const CandidatesMatchBar = (
 
 const MatchPlaceholder = () => {
   return (
-    <div className="column-centered placeholder-match">
+    <div className="placeholder-match flex flex-col justify-center items-center w-full">
       <div className="placeholder-candidate"></div>
       <div className="placeholder-score"></div>
     </div>

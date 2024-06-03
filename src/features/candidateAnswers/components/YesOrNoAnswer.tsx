@@ -34,12 +34,15 @@ export const YesOrNoAnswer = (props: IYesNoAnswerProps) => {
   ];
 
   return (
-    <div className="yes-or-no-answer__container">
+    <div className="yes-or-no-answer__container flex flex-row justify-center items-end w-full gap-6 relative">
       {options.map((option) => {
         const isToggled = candidateAnswer === option.value;
 
         return (
-          <div className="yes-or-no-answer__option" key={option.value}>
+          <div
+            className="yes-or-no-answer__option flex flex-col items-center"
+            key={option.value}
+          >
             <ToggleButton
               isDisabled
               variant="outline"
