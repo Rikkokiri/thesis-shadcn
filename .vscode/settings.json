@@ -13,25 +13,25 @@
     "zustand"
   ],
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#77477f",
-    "activityBar.background": "#77477f",
+    "activityBar.activeBackground": "#303036",
+    "activityBar.background": "#303036",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#292617",
+    "activityBarBadge.background": "#a73838",
     "activityBarBadge.foreground": "#e7e7e7",
     "commandCenter.border": "#e7e7e799",
-    "sash.hoverBorder": "#77477f",
-    "statusBar.background": "#58355e",
+    "sash.hoverBorder": "#303036",
+    "statusBar.background": "#18181b",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#77477f",
-    "statusBarItem.remoteBackground": "#58355e",
+    "statusBarItem.hoverBackground": "#303036",
+    "statusBarItem.remoteBackground": "#18181b",
     "statusBarItem.remoteForeground": "#e7e7e7",
-    "titleBar.activeBackground": "#58355e",
+    "titleBar.activeBackground": "#18181b",
     "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#58355e99",
+    "titleBar.inactiveBackground": "#18181b99",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#58355E",
+  "peacock.color": "#18181b",
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   }
