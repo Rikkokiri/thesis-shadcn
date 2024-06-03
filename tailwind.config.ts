@@ -21,6 +21,8 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        body: "hsl(var(--body))",
+        logo: "hsl(var(--yle-logo))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
@@ -51,13 +53,54 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gray: {
+          5: "hsl(var(--gray-5))",
+          10: "hsl(var(--gray-10))",
+          20: "hsl(var(--gray-20))",
+          30: "hsl(var(--gray-30))",
+          40: "hsl(var(--gray-40))",
+          50: "hsl(var(--gray-50))",
+          60: "hsl(var(--gray-60))",
+          70: "hsl(var(--gray-70))",
+          80: "hsl(var(--gray-80))",
+          90: "hsl(var(--gray-90))",
+          95: "hsl(var(--gray-95))",
+        },
+        black: {
+          DEFAULT: "hsl(var(--black))",
+          9: "hsl(var(--black-9))",
+          15: "hsl(var(--black-15))",
+          41: "hsl(var(--black-41))",
+          70: "hsl(var(--black-70))",
+        },
+        white: {
+          DEFAULT: "hsl(var(--white))",
+          17: "hsl(var(--white-17))",
+          21: "hsl(var(--white-21))",
+          71: "hsl(var(--white-71))",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error))",
+          dark: "hsl(var(--live-red))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          dark: "hsl(var(--green-bright))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "4px", // calc(var(--radius) - 4px)
+        xs: "2px",
       },
       size: {},
+      boxShadow: {
+        toolbar: "0 0 7px 0 hsl(var(--black-15)) ",
+      },
+      flex: {
+        "auto-no-shrink": "1 0 auto",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

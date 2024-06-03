@@ -15,10 +15,10 @@ export const SmallSpeechBubble = (props: ISpeechBubbleProps) => {
 
   return (
     <div
-      className={`speech-bubble ${agreeingAnswer ? "agree" : "disagree"} ${props.className || ""}`}
+      className={`speech-bubble ${agreeingAnswer ? "agree" : "disagree"} ${props.className || ""} flex flex-row items-center justify-center p-2 font-bold rounded-sm`}
     >
       <div className="speech-bubble__arrow"></div>
-      <div className="speech-bubble__content">{props.content}</div>
+      <div>{props.content}</div>
     </div>
   );
 };

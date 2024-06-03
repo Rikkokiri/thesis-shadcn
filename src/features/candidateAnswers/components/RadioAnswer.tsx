@@ -12,7 +12,7 @@ export const RadioAnswer = (props: IRadioAnswerProps) => {
   const { t, candidateAnswer, userAnswer, candidateImgSrc } = props;
 
   return (
-    <div className="row-centered answer__radio">
+    <div className="flex items-center justify-center w-full pt-2">
       <DisplayRadioRange
         options={buildOptions(t, candidateAnswer, userAnswer, candidateImgSrc)}
         candidateAnswer={candidateAnswer}

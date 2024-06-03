@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import "../styles/CommentCard.css";
 import { QuestionType, YesNoAnswer } from "@data/types";
 
 interface ICommentCardProps {
@@ -25,17 +24,19 @@ export const CommentCard = (props: ICommentCardProps) => {
 
   return (
     <div
-      className={`comment-card answer-${questionType === QuestionType.AGREE_SCALE && "scale"}`}
+      className={`comment-card text-sm flex flex-col gap-5 p-4 pt-2 w-full  mb-0 mx-2.5 ${questionType === QuestionType.AGREE_SCALE ? "mt-7" : "mt-3"} max-w-[343px] rounded-sm relative bg-gray-20 dark:bg-gray-90`}
     >
       <div
-        className="comment-card__arrow"
+        className="absolute size-4 bg-inherit"
         style={{
+          transform: "rotate(45deg",
+          top: "-6px",
           left: `${arrowPosition(answer, questionType)}%`,
           display: answer === undefined ? "none" : "inherit",
         }}
       ></div>
-      <div className="comment-card__header">{header}</div>
-      <div className="comment-card__body">{body}</div>
+      <div className="font-bold">{header}</div>
+      <div>{body}</div>
     </div>
   );
 };

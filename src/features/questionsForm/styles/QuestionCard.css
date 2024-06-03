@@ -1,38 +1,6 @@
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--card-bg);
-  margin-bottom: 1.5rem;
-  padding: 5rem 1.5rem;
-  border-radius: var(--border-radius-sm);
-  max-width: 680px;
-}
-
-.card__header {
-  gap: 1.5rem;
-}
-
 .category {
-  /* TODO: Define typography style? */
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  /* TODO: Define a new typography style? */
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 700;
-}
-
-.question {
-  font-weight: 900;
-  font-size: 24px;
-  max-width: 343px;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.info-buttons {
-  margin-top: 6px;
-  margin-bottom: 18px;
-}
-
-.answer__radio {
-  padding-top: 8px;
 }

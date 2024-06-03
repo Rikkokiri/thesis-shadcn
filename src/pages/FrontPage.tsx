@@ -1,4 +1,4 @@
-import { Button } from "@components/Button/Button";
+import { Button } from "@/components/ui/button";
 import { SectionCard } from "@components/SectionCard.tsx/SectionCard";
 import { useAnswerStore } from "@stores/answerStore";
 import { useTranslation } from "react-i18next";
@@ -18,13 +18,14 @@ export const FrontPage = () => {
 
   return (
     <>
-      <div className="page-header">
-        <h1 className="heading-1 mb-16">{t("frontPage.title")}</h1>
-        <Button iconAfter={<FiChevronRight />} onClick={startCompass}>
+      <div className="pb-6 text-center w-full">
+        <h1 className="heading-1 mb-4">{t("frontPage.title")}</h1>
+        <Button onClick={startCompass}>
+          <FiChevronRight className="mr-2" />
           {t("frontPage.start")}
         </Button>
       </div>
-      <div className="page-sections__column py-24">
+      <div className="flex flex-col gap-6 w-full py-6 max-w-[680px]">
         <SectionCard title={t("candidates")}>
           <div></div>
         </SectionCard>
