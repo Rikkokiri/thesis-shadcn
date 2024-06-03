@@ -1,0 +1,38 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": ".prettierrc",
+  "cSpell.words": [
+    "Avenir",
+    "CHAKRA",
+    "mantine",
+    "optimizelegibility",
+    "shadcn",
+    "stylelint",
+    "untoggled",
+    "zustand"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#77477f",
+    "activityBar.background": "#77477f",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#292617",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#77477f",
+    "statusBar.background": "#58355e",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#77477f",
+    "statusBarItem.remoteBackground": "#58355e",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#58355e",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#58355e99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#58355E",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
+}
