@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
-import "./QuestionsPage.css";
-import { Button } from "../components/Button/Button";
+import { Button } from "@/components/ui/button";
 import { FiArrowDown } from "react-icons/fi";
 import { QuestionForm } from "../features/questionsForm";
 import { CandidatesMatch } from "src/features/candidatesMatch";
@@ -19,27 +18,26 @@ export const QuestionsPage = () => {
   return (
     <>
       {inView && <CandidatesMatch />}
-      <section className="question-page__header">
+      {/* TODO: Top level section element { background-color: var(--page-header-bg); } */}
+      <section className="flex flex-col w-full items-center py-8 px-0 text-center">
         <p className="subtitle m-0">{t("electionName")}</p>
-        <h1 className="heading-1 question-page__title">
-          {t("questionPage.findYourCandidate")}
-        </h1>
-        <p className="page-intro">{t("questionPage.description")}</p>
-
+        <h1 className="heading-1 m-0">{t("questionPage.findYourCandidate")}</h1>
+        <p className="page-intro p-4 pb-8 max-w-[680px] leading-6">
+          {t("questionPage.description")}
+        </p>
         <Button
-          iconBefore={<FiArrowDown />}
           onClick={() => {
-            console.log("Scroll to first question!");
             questionsStartRef.current?.scrollIntoView({
               behavior: "smooth",
             });
           }}
         >
+          <FiArrowDown />
           {t("questionPage.findYourCandidate")}
         </Button>
         <div ref={questionsStartRef} />
       </section>
-      <div className="question-page__content" ref={ref}>
+      <div className="w-full flex flex-col items-center pt-6" ref={ref}>
         <QuestionForm />
       </div>
     </>

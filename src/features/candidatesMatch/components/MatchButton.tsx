@@ -16,15 +16,19 @@ export const MatchButton = (props: IMatchButtonProps) => {
     <>
       <button
         aria-label={ariaLabel}
-        className="match-result"
+        className="h-full border-none p-0 flex flex-col items-center gap-1 w-[36px]"
         onClick={() => {
           console.log("Clicked the button");
           setIsModalOpen(true);
         }}
       >
-        <div className="match-result__img-wrapper">
-          <img src={logoSrc} aria-hidden className="match-result__img" />
-          <p className="match-result__score">{`${percentage}%`}</p>
+        <div className="flex flex-col justify-start items-center">
+          <img
+            src={logoSrc}
+            aria-hidden
+            className="rounded-sm shrink-0 w-8 h-[43px] p-[3px]"
+          />
+          <p className="match-result__score font-bold text-center text-primary-foreground">{`${percentage}%`}</p>
         </div>
       </button>
       <CandidateModal

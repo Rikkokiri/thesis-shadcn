@@ -15,14 +15,17 @@ function App() {
   return (
     <>
       <Toolbar />
-      <div id="main-wrapper">
-        <main>
+      <div id="main-wrapper" className="flex flex-col">
+        <main className="flex flex-col items-center justify-items-start flex-[1_0_auto]">
           <Outlet />
         </main>
-        <footer id="app-footer">
-          <div className="footer-links">
-            <Link to="/">{t("footer.frontPageLink")}</Link>
+        <footer id="app-footer" className="flex flex-col">
+          <div className="flex flex-row justify-center wrap py-1 px-4 text-sm">
+            <Link className="py-3 px-4 font-bold" to="/">
+              {t("footer.frontPageLink")}
+            </Link>
             <a
+              className="py-3 px-4 font-bold"
               href="https://vaalit.yle.fi/vaalikone/presidentinvaali2024"
               target="_blank"
               rel="noreferrer"

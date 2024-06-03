@@ -40,7 +40,6 @@
   --tag-negative-text: #000;
 
   /* Candidate answers */
-  --candidate-comment-bg: var(--gray-20);
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--gray-5);
