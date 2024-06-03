@@ -1,9 +1,7 @@
-@import "./colors.css";
+/* @import "./colors.css"; */
 @import "./variables.css";
 @import "./reset.css";
 @import "./typography.css";
-@import "./layout.css";
-@import "./utils.css";
 @import "./themes/light-theme.css";
 @import "./themes/dark-theme.css";
 
