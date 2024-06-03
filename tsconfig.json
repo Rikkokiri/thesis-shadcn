@@ -12,7 +12,8 @@
       "@components/*": ["./src/components/*"],
       "@stores/*": ["./src/stores/*"],
       "@data/*": ["./src/data/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@hooks/*": ["./src/hooks/*"],
+      "@/*": ["./src/*"]
     },
 
     /* Bundler mode */
@@ -30,6 +31,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "@types"],
+  "include": ["src", "@types", "utils"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
