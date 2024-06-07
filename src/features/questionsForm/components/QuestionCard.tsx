@@ -32,7 +32,7 @@ export const QuestionCard = (props: ICardProps) => {
   const questionNumber = category.position + question.position + 1;
 
   return (
-    <Card className="flex flex-col items-center justify-center border-sm mb-6 py-20 px-6 w-full max-w-[680px]">
+    <Card className="flex flex-col items-center justify-center mb-6 py-20 px-6 w-full max-w-[680px]">
       <CardHeader className="gap-6">
         <Badge>{`${questionNumber}/${questionsCount}`}</Badge>
         <p className="text-xs font-bold">{category.name.en}</p>

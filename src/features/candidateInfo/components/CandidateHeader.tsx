@@ -26,7 +26,7 @@ export const CandidateIntroHeader = (
         ))}
       <div
         className={`size-[124px] flex justify-center items-center my-4 mx-auto
-          rounded-full border border-foreground text-xl font-bold
+          rounded-50 border border-foreground text-xl font-bold
         `}
       >
         {t("candidate.number")} {candidate.number}

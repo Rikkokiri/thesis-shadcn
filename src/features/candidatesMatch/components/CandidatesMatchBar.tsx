@@ -5,6 +5,7 @@ import { FiEye } from "react-icons/fi";
 import { MatchButton } from "./MatchButton";
 import { useCandidatesMatch } from "../hooks/useCandidatesMatch";
 import { MatchWithDetails } from "../types";
+import { CandidateModal } from "./CandidateModal";
 
 /* TODO: Make sure toggle button matches following styles:
 .button.match-bar__toggle {
@@ -37,7 +38,9 @@ export const CandidatesMatchBar = (
                 <MatchPlaceholder key={index} />
               ))
             : topFourCandidates.map((candidate: MatchWithDetails) => (
-                <MatchButton candidate={candidate} key={candidate.id} />
+                <CandidateModal key={candidate.id} candidate={candidate}>
+                  <MatchButton candidate={candidate} />
+                </CandidateModal>
               ))}
         </div>
         <ToggleButton

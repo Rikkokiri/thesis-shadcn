@@ -15,7 +15,7 @@ export const SmallSpeechBubble = (props: ISpeechBubbleProps) => {
   return (
     <div
       className={`relative ${agreeingAnswer ? "bg-agree" : "bg-disagree"}
-        flex flex-row items-center justify-center rounded-sm
+        flex flex-row items-center justify-center rounded
         mb-[10px] p-2 font-bold text-sm
         text-gray-5 dark:text-primary
          ${props.className || ""}

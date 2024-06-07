@@ -1,6 +1,13 @@
 import { FiInfo } from "react-icons/fi";
 import { LocalizedString } from "@data/types";
-import { Modal } from "@components/Modal/Modal";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { TFunction } from "i18next";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { useLocalizedString } from "@hooks/useLocalizedString";
@@ -17,27 +24,26 @@ export const AdditionalInfo = (props: IAdditionalInfoProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <>
-      <ToggleButton
-        isToggled={isModalOpen}
-        onClick={() => setIsModalOpen(true)}
-        untoggledIcon={<FiInfo />}
-        toggledIcon={<FiInfo />}
-        variant="ghost"
-        size="small"
-        toggledClassName=""
-      >
-        {t("question.whatAbout")}
-      </ToggleButton>
-      <Modal
-        isOpen={isModalOpen}
-        closeModal={() => {
-          setIsModalOpen(false);
-        }}
-      >
-        <h3 className="text-lg pb-2">{t("question.whatAbout")}</h3>
-        <p className="text-sm">{localize(info)}</p>
-      </Modal>
-    </>
+    <Dialog>
+      <DialogTrigger>
+        <ToggleButton
+          isToggled={isModalOpen}
+          onClick={() => setIsModalOpen(true)}
+          untoggledIcon={<FiInfo />}
+          toggledIcon={<FiInfo />}
+          variant="ghost"
+          size="small"
+          toggledClassName=""
+        >
+          {t("question.whatAbout")}
+        </ToggleButton>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{t("question.whatAbout")}</DialogTitle>
+          <DialogDescription>{localize(info)}</DialogDescription>
+        </DialogHeader>
+      </DialogContent>
+    </Dialog>
   );
 };

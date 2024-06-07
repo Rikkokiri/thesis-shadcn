@@ -45,10 +45,21 @@ const config = {
         },
       ],
     },
+    borderRadius: {
+      none: "0",
+      sm: "2px",
+      DEFAULT: "4px",
+      md: "6px",
+      lg: "8px",
+      full: "9999px",
+      50: "50%",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
+        modal: "hsl(var(--modal))",
+        backdrop: "hsl(var(--backdrop))",
         ring: "hsl(var(--ring))",
         body: "hsl(var(--body))",
         logo: "hsl(var(--yle-logo))",
@@ -63,13 +74,10 @@ const config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        /* TODO: Delete */
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -110,12 +118,6 @@ const config = {
           dark: "hsl(var(--green-bright))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "4px", // calc(var(--radius) - 4px)
-        xs: "2px",
-      },
       lineHeight: {
         "140": "1.4",
       },
@@ -132,6 +134,7 @@ const config = {
       boxShadow: {
         toolbar: "0 0 7px 0 hsl(var(--black-15))",
         matchbar: "0 2px 4px 0 hsl(var(--black-19))",
+        modal: "rgba(0, 0, 0, 16%) 0 3px 6px 0, rgba(0, 0, 0, 23%) 0 3px 6px 0",
       },
       flex: {
         "auto-no-shrink": "1 0 auto",
