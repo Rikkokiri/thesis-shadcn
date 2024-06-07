@@ -26,7 +26,7 @@ export const MatchButton = (props: IMatchButtonProps) => {
             aria-hidden
             className="rounded-sm shrink-0 w-8 h-[43px] p-[3px] bg-gray-10"
           />
-          <p className="text-sm leading-normal font-bold text-center text-foreground">{`${percentage}%`}</p>
+          <p className="text-sm font-bold text-center text-foreground">{`${percentage}%`}</p>
         </div>
       </button>
       <CandidateModal
