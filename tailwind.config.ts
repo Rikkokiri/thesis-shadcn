@@ -126,8 +126,8 @@ const config = {
         "arrow-sm": "10px",
       },
       height: {
-        toolbar: "76px",
-        main: "calc(100vh - 76px)",
+        toolbar: "72px",
+        main: "calc(100vh - 72px)",
       },
       boxShadow: {
         toolbar: "0 0 7px 0 hsl(var(--black-15))",
