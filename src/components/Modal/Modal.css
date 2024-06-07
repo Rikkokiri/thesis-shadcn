@@ -4,7 +4,8 @@ dialog.modal {
   top: 50%;
   transform: translate(-50%, -50%);
   color: var(--text-primary);
-  background-color: var(--modal-bg);
+  /* background-color: var(--modal-bg); */
+  background-color: var(--gray-90);
   box-shadow: var(--modal-box-shadow);
   padding: 0;
   min-width: var(--modal-min-width);
@@ -31,6 +32,6 @@ dialog.modal::backdrop {
   position: absolute;
   top: 16px;
   right: 16px;
-  border-radius: var(--border-radius-sm);
+  border-radius: 4px;
   margin-left: 4px;
 }

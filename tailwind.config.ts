@@ -16,6 +16,35 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontSize: {
+      // font-size, line-height
+      xs: ["0.75rem", "1rem"] /* 12px */,
+      sm: ["0.875rem", "1.5"] /* 14px */,
+      base: ["1rem", "1.5"] /* 16px */,
+      lg: [
+        "1.125rem" /* 18px */,
+        {
+          lineHeight: "1.5",
+          fontWeight: 600,
+        },
+      ],
+      xl: ["1.25rem", "1.5"] /* 20px */,
+      "2xl": ["1.5rem", "1.5"] /* 24px */,
+      "3xl": [
+        "1.75rem" /* 28px */,
+        {
+          lineHeight: "1.3",
+          fontWeight: 900,
+        },
+      ],
+      "4xl": [
+        "2rem" /* 32px */,
+        {
+          lineHeight: "1.2",
+          fontWeight: 700,
+        },
+      ],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -25,6 +54,7 @@ const config = {
         logo: "hsl(var(--yle-logo))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        heading: "hsl(var(--heading))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -85,6 +115,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "4px", // calc(var(--radius) - 4px)
         xs: "2px",
+      },
+      lineHeight: {
+        "140": "1.4",
       },
       spacing: {
         "arrow-sm": "10px",

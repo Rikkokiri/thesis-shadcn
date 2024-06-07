@@ -19,7 +19,7 @@ export const FrontPage = () => {
   return (
     <>
       <div className="pb-6 text-center w-full">
-        <h1 className="heading-1 mb-4">{t("frontPage.title")}</h1>
+        <h1 className="text-3xl text-heading mb-4">{t("frontPage.title")}</h1>
         <Button onClick={startCompass}>
           <FiChevronRight className="mr-2" />
           {t("frontPage.start")}

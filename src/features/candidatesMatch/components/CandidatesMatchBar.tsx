@@ -1,4 +1,3 @@
-// import "../styles/CandidatesMatchBar.css";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { useState } from "react";
 import { FiEyeOff } from "react-icons/fi";
@@ -6,6 +5,18 @@ import { FiEye } from "react-icons/fi";
 import { MatchButton } from "./MatchButton";
 import { useCandidatesMatch } from "../hooks/useCandidatesMatch";
 import { MatchWithDetails } from "../types";
+
+/* TODO: Make sure toggle button matches following styles:
+.button.match-bar__toggle {
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.match-bar__toggle.toggled-transparent {
+  background-color: transparent;
+}
+*/
 
 export const CandidatesMatchBar = (
   props: ReturnType<typeof useCandidatesMatch>,
