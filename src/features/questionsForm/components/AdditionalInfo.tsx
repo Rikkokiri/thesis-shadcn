@@ -35,8 +35,8 @@ export const AdditionalInfo = (props: IAdditionalInfoProps) => {
           setIsModalOpen(false);
         }}
       >
-        <h3 className="heading-3 pb-2">{t("question.whatAbout")}</h3>
-        <p className="body-small">{localize(info)}</p>
+        <h3 className="text-lg pb-2">{t("question.whatAbout")}</h3>
+        <p className="text-sm">{localize(info)}</p>
       </Modal>
     </>
   );

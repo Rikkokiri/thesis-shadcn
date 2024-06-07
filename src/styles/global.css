@@ -46,6 +46,7 @@
     --body: var(--gray-10);
     --background: var(--white);
     --foreground: var(--blue-black);
+    --heading: var(--dark-blue);
 
     --card: var(--white);
     --card-foreground: var(--blue-black);
@@ -76,6 +77,7 @@
     --body: var(--black);
     --background: var(--blue-black); /* 222.2 84% 4.9%; */
     --foreground: var(--gray-5);
+    --heading: var(--white);
 
     --card: var(--blue-black);
     --card-foreground: var(--gray-5);

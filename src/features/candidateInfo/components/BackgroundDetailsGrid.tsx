@@ -19,7 +19,7 @@ export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
   return (
     <InfoGrid>
       <InfoGridRow>
-        <InfoGridItem className="body-bold">
+        <InfoGridItem className="text-base font-bold">
           {t("candidate.website")}
         </InfoGridItem>
         <InfoGridItem>
@@ -35,11 +35,11 @@ export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
         </InfoGridItem>
       </InfoGridRow>
       <InfoGridRow>
-        <InfoGridItem className="body-bold">Creator</InfoGridItem>
+        <InfoGridItem>Creator</InfoGridItem>
         <InfoGridItem>{candidate.creator}</InfoGridItem>
       </InfoGridRow>
       <InfoGridRow>
-        <InfoGridItem className="body-bold">Github repository</InfoGridItem>
+        <InfoGridItem>Github repository</InfoGridItem>
         <InfoGridItem>{candidate.github?.url || "-"}</InfoGridItem>
       </InfoGridRow>
     </InfoGrid>

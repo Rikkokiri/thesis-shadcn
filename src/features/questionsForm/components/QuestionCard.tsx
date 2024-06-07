@@ -1,4 +1,3 @@
-// import "../styles/QuestionCard.css"; // TODO: Get rid off style file
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
 import { FiEyeOff } from "react-icons/fi";
@@ -36,9 +35,9 @@ export const QuestionCard = (props: ICardProps) => {
     <Card className="flex flex-col items-center justify-center border-sm mb-6 py-20 px-6 w-full max-w-[680px]">
       <CardHeader className="gap-6">
         <Badge>{`${questionNumber}/${questionsCount}`}</Badge>
-        <p className="category text-xs font-bold">{category.name.en}</p>
+        <p className="text-xs font-bold">{category.name.en}</p>
       </CardHeader>
-      <h2 className="text-center font-black text-2xl leading-normal my-5 mx-0 max-w-[343px]">
+      <h2 className="text-center font-black text-2xl my-5 mx-0 max-w-[343px]">
         {question.question.en}
       </h2>
       <div className="info-buttons flex flex-row justify-center items-center w-full mt-1.5 mb-4.5">

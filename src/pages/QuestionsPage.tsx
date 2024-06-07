@@ -20,8 +20,12 @@ export const QuestionsPage = () => {
       {inView && <CandidatesMatch />}
       {/* TODO: Top level section element { background-color: var(--page-header-bg); } */}
       <section className="flex flex-col w-full items-center py-8 px-0 text-center">
-        <p className="subtitle m-0">{t("electionName")}</p>
-        <h1 className="heading-1 m-0">{t("questionPage.findYourCandidate")}</h1>
+        <p className="text-sm font-bold text-heading m-0">
+          {t("electionName")}
+        </p>
+        <h1 className="text-3xl text-heading m-0">
+          {t("questionPage.findYourCandidate")}
+        </h1>
         <p className="page-intro p-4 pb-8 max-w-[680px] leading-6">
           {t("questionPage.description")}
         </p>
