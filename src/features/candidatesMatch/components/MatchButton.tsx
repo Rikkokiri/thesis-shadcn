@@ -1,4 +1,3 @@
-import "../styles/MatchButton.css";
 import { useState } from "react";
 import { CandidateModal } from "./CandidateModal";
 import { MatchWithDetails } from "../types";
@@ -18,7 +17,6 @@ export const MatchButton = (props: IMatchButtonProps) => {
         aria-label={ariaLabel}
         className="h-full border-none p-0 flex flex-col items-center gap-1 w-[36px]"
         onClick={() => {
-          console.log("Clicked the button");
           setIsModalOpen(true);
         }}
       >
@@ -26,9 +24,9 @@ export const MatchButton = (props: IMatchButtonProps) => {
           <img
             src={logoSrc}
             aria-hidden
-            className="rounded-sm shrink-0 w-8 h-[43px] p-[3px]"
+            className="rounded-sm shrink-0 w-8 h-[43px] p-[3px] bg-gray-10"
           />
-          <p className="match-result__score font-bold text-center text-primary-foreground">{`${percentage}%`}</p>
+          <p className="text-sm leading-normal font-bold text-center text-foreground">{`${percentage}%`}</p>
         </div>
       </button>
       <CandidateModal

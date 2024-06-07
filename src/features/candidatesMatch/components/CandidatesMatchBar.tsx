@@ -18,7 +18,7 @@ export const CandidatesMatchBar = (
   }
 
   return (
-    <header className="match-bar fixed z-50 top-0 flex flex-col items-center justify-center h-[76px] w-full">
+    <header className="bg-background fixed z-50 top-0 flex flex-col items-center justify-center h-[76px] w-full shadow-matchbar">
       <div className="flex flex-row items-center w-full max-w-[520px]">
         <div className="flex flex-row w-full justify-evenly items-center p-0 pt-1">
           {resultsHidden || !topFourCandidates
@@ -47,9 +47,9 @@ export const CandidatesMatchBar = (
 
 const MatchPlaceholder = () => {
   return (
-    <div className="placeholder-match flex flex-col justify-center items-center w-full">
-      <div className="placeholder-candidate"></div>
-      <div className="placeholder-score"></div>
+    <div className="flex flex-col justify-between items-top w-8 h-full">
+      <div className="bg-gray-10 dark:bg-gray-80 w-full h-[34px] mb-0.5"></div>
+      <div className="bg-gray-10 dark:bg-gray-80 w-full h-[18px] mb-0.5"></div>
     </div>
   );
 };

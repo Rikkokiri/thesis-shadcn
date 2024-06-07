@@ -1,4 +1,3 @@
-import "../styles/AnswerCard.css";
 import { useTranslation } from "react-i18next";
 import { Question } from "@data/types";
 import { RadioAnswer } from "./RadioAnswer";
@@ -28,15 +27,14 @@ export const AnswerCard = (props: ICardProps) => {
     : undefined;
 
   const userAnswer = getAnswerByQuestionId(question.id);
-  {
-    /* <section className="answer-card"> */
-  }
   return (
     <Card className="flex flex-col items-center p-6 max-w-[680px] w-full">
       <CardHeader>
         <Badge variant="secondary">{`${question.position}/${questionsCount}`}</Badge>
       </CardHeader>
-      <h2 className="question">{question.question.en}</h2>
+      <h2 className="text-center my-5 mx-0 font-black text-2xl max-w-[343px]">
+        {question.question.en}
+      </h2>
       {question.questionType === "yes-no" ? (
         <YesOrNoAnswer
           questionId={questionId}

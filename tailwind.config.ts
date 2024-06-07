@@ -33,10 +33,6 @@ const config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -44,10 +40,6 @@ const config = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -79,12 +71,12 @@ const config = {
           21: "hsl(var(--white-21))",
           71: "hsl(var(--white-71))",
         },
-        error: {
-          DEFAULT: "hsl(var(--error))",
+        disagree: {
+          DEFAULT: "hsl(var(--disagree))",
           dark: "hsl(var(--live-red))",
         },
-        success: {
-          DEFAULT: "hsl(var(--success))",
+        agree: {
+          DEFAULT: "hsl(var(--agree))",
           dark: "hsl(var(--green-bright))",
         },
       },
@@ -94,9 +86,19 @@ const config = {
         sm: "4px", // calc(var(--radius) - 4px)
         xs: "2px",
       },
-      size: {},
+      spacing: {
+        "arrow-sm": "10px",
+      },
+      size: {
+        "arrow-sm": "10px",
+      },
+      height: {
+        toolbar: "76px",
+        main: "calc(100vh - 76px)",
+      },
       boxShadow: {
-        toolbar: "0 0 7px 0 hsl(var(--black-15)) ",
+        toolbar: "0 0 7px 0 hsl(var(--black-15))",
+        matchbar: "0 2px 4px 0 hsl(var(--black-19))",
       },
       flex: {
         "auto-no-shrink": "1 0 auto",
