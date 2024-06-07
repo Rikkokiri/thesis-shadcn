@@ -1,27 +1,21 @@
-/* @import "./colors.css"; */
 @import "./variables.css";
 @import "./reset.css";
 @import "./typography.css";
-/* @import "./themes/light-theme.css";
-@import "./themes/dark-theme.css"; */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* TODO: Update font family */
-  line-height: 1.5;
+  /* line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
-  font-size: 16px; /* 14px in Yle's styles */
-  color: var(--text-primary);
   height: 100vh;
-  background-color: var(--bg-primary);
 }
 
 a,
@@ -33,19 +27,4 @@ a:hover {
 
 #root {
   height: 100%;
-}
-
-#main-wrapper {
-  height: calc(100% - 76px);
-}
-
-#app-footer {
-  background-color: var(--footer-bg);
-  width: 100%;
-  padding: 21px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0 0 0%;
-  text-align: center;
-}
+} */

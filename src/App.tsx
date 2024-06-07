@@ -15,11 +15,14 @@ function App() {
   return (
     <>
       <Toolbar />
-      <div id="main-wrapper" className="flex flex-col">
+      <div className="h-main flex flex-col">
         <main className="flex flex-col items-center justify-items-start flex-[1_0_auto]">
           <Outlet />
         </main>
-        <footer id="app-footer" className="flex flex-col">
+        <footer
+          id="app-footer"
+          className="flex flex-col bg-gray-5 dark:bg-gray-90 py-[21px] px-0"
+        >
           <div className="flex flex-row justify-center wrap py-1 px-4 text-sm">
             <Link className="py-3 px-4 font-bold" to="/">
               {t("footer.frontPageLink")}

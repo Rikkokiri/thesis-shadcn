@@ -24,7 +24,9 @@ export const CommentCard = (props: ICommentCardProps) => {
 
   return (
     <div
-      className={`comment-card text-sm flex flex-col gap-5 p-4 pt-2 w-full  mb-0 mx-2.5 ${questionType === QuestionType.AGREE_SCALE ? "mt-7" : "mt-3"} max-w-[343px] rounded-sm relative bg-gray-20 dark:bg-gray-90`}
+      className={`comment-card text-sm flex flex-col gap-5 p-4 pt-2 w-full  mb-0 mx-2.5
+        ${questionType === QuestionType.AGREE_SCALE ? "mt-7" : "mt-3"} max-w-[343px]
+        rounded-sm relative bg-gray-20 dark:bg-gray-90`}
     >
       <div
         className="absolute size-4 bg-inherit"
