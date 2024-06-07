@@ -17,7 +17,7 @@ export const CandidatePage = () => {
   return (
     <>
       <CandidateHeader candidateId={candidate.id} />
-      <div className="flex flex-col gap-6 w-full mb-6 max-w-[680px]">
+      <div className="flex flex-col gap-6 w-full pb-6 pt-12 max-w-[680px]">
         <CandidateInfo candidateId={candidate.id} />
         <CandidateAnswers candidate={candidate} />
       </div>

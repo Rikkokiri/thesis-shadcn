@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import "../styles/SmallSpeechBubble.css";
 import { QuestionType } from "@data/types";
 import { doesAgree } from "@data/data-utils";
 
@@ -15,9 +14,18 @@ export const SmallSpeechBubble = (props: ISpeechBubbleProps) => {
 
   return (
     <div
-      className={`speech-bubble ${agreeingAnswer ? "agree" : "disagree"} ${props.className || ""} flex flex-row items-center justify-center p-2 font-bold rounded-sm`}
+      className={`relative ${agreeingAnswer ? "bg-agree" : "bg-disagree"}
+        flex flex-row items-center justify-center rounded-sm
+        mb-[10px] p-2 font-bold text-sm
+        text-gray-5 dark:text-primary
+         ${props.className || ""}
+      `}
     >
-      <div className="speech-bubble__arrow"></div>
+      <div
+        className={`clip-arrow-small size-arrow-sm absolute bg-inherit
+          -translate-x-1/2 left-1/2 bottom-[-9px] 
+          `}
+      ></div>
       <div>{props.content}</div>
     </div>
   );

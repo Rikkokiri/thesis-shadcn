@@ -1,4 +1,3 @@
-import "../styles/AnswerList.css";
 import { useState } from "react";
 import { useCandidateAnswers } from "../hooks/useCandidateAnswers";
 import { AnswerCard } from "./AnswerCard";
@@ -7,6 +6,17 @@ import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { FiMinus } from "react-icons/fi";
 import { FiPlus } from "react-icons/fi";
 
+/*
+TODO: Make sure button matches following styles:
+.answer-list__expand-button.toggled {
+  background-color: transparent;
+}
+
+.answer-list__expand-button:hover {
+  background-color: var(--button-outline-bg-hover);
+}
+*/
+
 export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
   const { t, questions, candidateAnswers, candidateImgSrc } = props;
   const [isExpanded, setExpanded] = useState(false);
@@ -14,21 +24,25 @@ export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
 
   return (
     <article className="answer-list">
-      <SectionCard title={t("candidateSections.answers")}>
-        <>
+      <SectionCard title={t("candidateSections.answers")} contentClasses="p-0">
+        <div>
           {questionsToShow.map((question) => (
-            <AnswerCard
+            <div
+              className="border-b border-gray-10 dark:border-black last:border-none"
               key={question.id}
-              question={question}
-              candidateAnswer={
-                candidateAnswers[question.id] ?? { answer: null }
-              }
-              questionsCount={questions.length}
-              candidateImgSrc={candidateImgSrc}
-            />
+            >
+              <AnswerCard
+                question={question}
+                candidateAnswer={
+                  candidateAnswers[question.id] ?? { answer: null }
+                }
+                questionsCount={questions.length}
+                candidateImgSrc={candidateImgSrc}
+              />
+            </div>
           ))}
-        </>
-        <div className="separator"></div>
+        </div>
+        <div className="bg-gray-30 dark:bg-gray-60 my-0 mx-6 h-px"></div>
         <div className="answer-list__expand p-6 flex flex-row justify-center items-center w-full">
           <ToggleButton
             isToggled={isExpanded}
