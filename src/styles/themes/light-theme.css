@@ -33,7 +33,7 @@
 
   /* Cards */
   --card-bg: #fff;
-  --section-card-header-border: 1px solid var(--gray-5);
+  --section-card-header-border: 2px solid var(--gray-20);
   --tag-default-bg: var(--blue-black);
   --tag-default-text: var(--text-negative);
   --tag-negative-bg: var(--gray-5);
@@ -47,5 +47,6 @@
   --separator: var(--gray-30);
 
   /* Match results */
+  --match-bar-shadow: rgba(0, 0, 0, 19%) 0 2px 4px 0;
   --match-placeholder-bg: var(--gray-10);
 }

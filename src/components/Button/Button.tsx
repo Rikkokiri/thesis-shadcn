@@ -33,7 +33,7 @@ export const Button = ({
   return (
     <button
       disabled={isDisabled}
-      className={`button button--${variant} ${className} button--${size}`}
+      className={`button button--${variant} ${className ?? ""} button--${size}`}
       onClick={onClick}
     >
       <ButtonIcon icon={iconBefore} iconSize={iconSize} />

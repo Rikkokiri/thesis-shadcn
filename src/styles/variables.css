@@ -1,7 +1,16 @@
 :root {
   font-size: 16px;
 
+  /* Component sizing */
+  --match-bar-height: 76px;
   --toolbar-height: 72px;
+  --toolbar-max-width: 1080px;
+  --radio-range-max-width: 343px;
+  --comment-max-width: 343px;
+  --modal-max-width: 343px;
+  --modal-min-width: 300px;
+  --modal-max-height: 550px;
+  --modal-min-height: 120px;
 
   /* Spacing */
   --spacing: 1rem;

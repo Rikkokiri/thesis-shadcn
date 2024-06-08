@@ -3,7 +3,7 @@
 .toolbar {
   position: relative;
   width: 100%;
-  height: var(--toolbar-height); /* TODO: Responsive height, use variable */
+  height: var(--toolbar-height); /* TODO: Responsive height */
   box-shadow: var(--black-15) 0 0 7px 0;
   background-color: var(--toolbar-bg);
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .toolbar__nav {
-  max-width: 1080px; /* TODO: Use variable? */
+  max-width: var(--toolbar-max-width);
   display: flex;
   flex-direction: row;
   align-items: center;

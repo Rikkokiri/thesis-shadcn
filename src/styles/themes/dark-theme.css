@@ -34,7 +34,7 @@
 
   /* Cards */
   --card-bg: var(--blue-black);
-  --section-card-header-border: 1px solid var(--gray-60); /* rgb(74, 79, 84) */
+  --section-card-header-border: 2px solid var(--gray-60); /* rgb(74, 79, 84) */
   --tag-default-bg: var(--gray-5);
   --tag-default-text: var(--text-negative);
   --tag-negative-bg: var(--gray-5);
@@ -48,5 +48,6 @@
   --separator: var(--gray-60);
 
   /* Match results */
+  --match-bar-shadow: rgba(0, 0, 0, 19%) 0 2px 4px 0;
   --match-placeholder-bg: var(--gray-80);
 }

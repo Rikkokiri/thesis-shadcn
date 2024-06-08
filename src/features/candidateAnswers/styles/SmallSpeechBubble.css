@@ -1,7 +1,7 @@
 .speech-bubble {
   --tip-size: 10px;
 
-  padding: 8px; /* TODO: Use a variable */
+  padding: 8px;
   border-radius: var(--border-radius-sm);
   font-weight: 700;
   font-size: 14px;

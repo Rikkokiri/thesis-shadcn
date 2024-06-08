@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  gap: 24px; /* TODO: Use variable */
+  gap: 24px;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .yes-or-no-answer__option button {
-  margin-top: 8px; /* TODO: Use a variable */
+  margin-top: 8px;
 }
 
 .yes-or-no-answer__option .user-answer-bubble {

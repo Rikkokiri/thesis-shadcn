@@ -72,7 +72,7 @@
 .button--solid {
   background-color: var(--button-solid-bg);
   color: var(--text-negative);
-  border-color: transparent;
+  border: none;
 }
 
 .button--solid:hover {

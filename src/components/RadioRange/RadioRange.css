@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: 343px; /* TODO: Use a variable */
+  max-width: var(--radio-range-max-width);
 }
 
 /* Line behind radio options */

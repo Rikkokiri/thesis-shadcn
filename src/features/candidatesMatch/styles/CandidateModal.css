@@ -9,12 +9,12 @@
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  padding-top: 32px; /* TODO: Use a variable */
+  padding-top: 32px;
 }
 
 .candidate-modal__img {
   flex-shrink: 0;
-  background-color: rgb(241, 242, 244); /* TODO: Use a themed variable */
+  background-color: var(--gray-10);
   border-radius: var(--border-radius-sm);
   width: 64px;
   height: 85px;
@@ -43,7 +43,7 @@
   height: 4px;
   border-radius: 19px;
   margin-top: 4px;
-  background: rgb(156, 172, 181); /* TODO: Fallback color */
+  background: var(--gray-10);
   margin-right: auto;
 }
 
@@ -52,7 +52,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 18px; /* TODO: Use a variable */
+  padding-left: 18px;
 }
 
 .candidate-modal__name {
