@@ -45,7 +45,7 @@ export const CandidateModal = ({
         <div className="w-full flex flex-col justify-end items-center pt-8">
           <Link
             to={`/candidates/${candidate.id}`}
-            className={buttonVariants({ variant: "outline", size: "sm" })}
+            className={`${buttonVariants({ variant: "outline", size: "sm" })} no-underline`}
           >
             {t("candidate.getToKnow")}
           </Link>
