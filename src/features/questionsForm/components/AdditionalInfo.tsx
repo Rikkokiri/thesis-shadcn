@@ -9,7 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { TFunction } from "i18next";
-import { ToggleButton } from "@components/ToggleButton/ToggleButton";
+import { Toggle } from "@/components/ui/toggle";
 import { useLocalizedString } from "@hooks/useLocalizedString";
 import { useState } from "react";
 
@@ -26,17 +26,16 @@ export const AdditionalInfo = (props: IAdditionalInfoProps) => {
   return (
     <Dialog>
       <DialogTrigger>
-        <ToggleButton
-          isToggled={isModalOpen}
-          onClick={() => setIsModalOpen(true)}
-          untoggledIcon={<FiInfo />}
-          toggledIcon={<FiInfo />}
+        <Toggle
+          pressed={isModalOpen}
+          onPressedChange={() => setIsModalOpen(true)}
+          untoggledIcon={<FiInfo className="size-5" />}
+          toggledIcon={<FiInfo className="size-5" />}
           variant="ghost"
-          size="small"
-          toggledClassName=""
+          size="sm"
         >
           {t("question.whatAbout")}
-        </ToggleButton>
+        </Toggle>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
