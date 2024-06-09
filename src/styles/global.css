@@ -124,6 +124,15 @@
   body {
     @apply bg-body text-foreground;
   }
+
+  a {
+    @apply underline;
+
+    &:hover,
+    &:visited {
+      @apply text-inherit;
+    }
+  }
 }
 
 @layer utilities {

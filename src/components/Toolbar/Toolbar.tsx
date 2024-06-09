@@ -11,7 +11,9 @@ export const Toolbar = () => {
       <nav className="toolbar__nav font-bold flex flex-row justify-center items-center max-w-[1080px]">
         <div className="flex flex-row items-center gap-6">
           <div className="toolbar__logo size-10 bg-logo rounded-sm"></div>
-          <Link to={Route.ROOT}>{t("navigation.frontPage")}</Link>
+          <Link to={Route.ROOT} className="no-underline">
+            {t("navigation.frontPage")}
+          </Link>
         </div>
       </nav>
     </header>
