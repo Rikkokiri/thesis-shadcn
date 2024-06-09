@@ -15,11 +15,12 @@ interface IBackgroundDetailsProps {
 export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
   const { t, candidate } = props;
   const { localize } = useLocalizedString();
+  const titleClasses = "text-base font-bold";
 
   return (
     <InfoGrid>
       <InfoGridRow>
-        <InfoGridItem className="text-base font-bold">
+        <InfoGridItem className={titleClasses}>
           {t("candidate.website")}
         </InfoGridItem>
         <InfoGridItem>
@@ -35,11 +36,11 @@ export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
         </InfoGridItem>
       </InfoGridRow>
       <InfoGridRow>
-        <InfoGridItem>Creator</InfoGridItem>
+        <InfoGridItem className={titleClasses}>Creator</InfoGridItem>
         <InfoGridItem>{candidate.creator}</InfoGridItem>
       </InfoGridRow>
       <InfoGridRow>
-        <InfoGridItem>Github repository</InfoGridItem>
+        <InfoGridItem className={titleClasses}>Github repository</InfoGridItem>
         <InfoGridItem>{candidate.github?.url || "-"}</InfoGridItem>
       </InfoGridRow>
     </InfoGrid>

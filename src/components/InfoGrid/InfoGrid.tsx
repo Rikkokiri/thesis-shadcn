@@ -35,6 +35,8 @@ export const InfoGridRow = ({ children, className }: GridProps) => {
  */
 export const InfoGridItem = ({ children, className }: GridProps) => {
   return (
-    <div className={`info-grid__item pb-1 ${className ?? ""}`}>{children}</div>
+    <div className={`info-grid__item pb-[5px] ${className ?? ""}`}>
+      {children}
+    </div>
   );
 };

@@ -18,11 +18,11 @@ export const FrontPage = () => {
 
   return (
     <>
-      <div className="pb-6 text-center w-full">
+      <div className="p-6 text-center w-full bg-background">
         <h1 className="text-3xl text-heading mb-4">{t("frontPage.title")}</h1>
         <Button onClick={startCompass}>
-          <FiChevronRight className="mr-2" />
           {t("frontPage.start")}
+          <FiChevronRight className="size-5" />
         </Button>
       </div>
       <div className="flex flex-col gap-6 w-full py-6 max-w-[680px]">
