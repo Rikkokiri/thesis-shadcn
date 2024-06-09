@@ -9,7 +9,7 @@ export const CandidateIndicator = (props: ICandidateIndicatorProps) => {
     <img
       src={props.imgSrc}
       alt={props.alt}
-      className={`candidate-indicator bg-card rounded ${props.className || ""}`}
+      className={`candidate-indicator bg-transparent rounded ${props.className || ""}`}
     />
   );
 };

@@ -109,19 +109,14 @@ const config = {
           21: "hsl(var(--white-21))",
           71: "hsl(var(--white-71))",
         },
-        disagree: {
-          DEFAULT: "hsl(var(--disagree))",
-          dark: "hsl(var(--live-red))",
-        },
-        agree: {
-          DEFAULT: "hsl(var(--agree))",
-          dark: "hsl(var(--green-bright))",
-        },
+        disagree: "hsl(var(--disagree))",
+        agree: "hsl(var(--agree))",
       },
       lineHeight: {
         "140": "1.4",
       },
       spacing: {
+        "4.5": "1.125rem",
         "arrow-sm": "10px",
       },
       size: {

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
+import { Toggle } from "@/components/ui/toggle";
 import { FiEyeOff } from "react-icons/fi";
 import { Category, Question } from "@data/types";
 import { Answer } from "@stores/answerStore";
@@ -40,20 +40,20 @@ export const QuestionCard = (props: ICardProps) => {
       <h2 className="text-center font-black text-2xl my-5 mx-0 max-w-[343px]">
         {question.question.en}
       </h2>
-      <div className="info-buttons flex flex-row justify-center items-center w-full mt-1.5 mb-4.5">
+      <div className="flex flex-row justify-center items-center w-full mt-1.5 mb-4.5">
         {question.additionalInfo && (
           <AdditionalInfo t={t} info={question.additionalInfo} />
         )}
-        <ToggleButton
-          onClick={() => toggleQuestionHiding(question.id)}
-          isToggled={!!answer?.hideQuestion}
-          untoggledIcon={<FiEyeOff />}
-          toggledIcon={<FiEyeOff />}
-          variant="ghost"
-          size="small"
+        <Toggle
+          variant="noHoverGhost"
+          onPressedChange={() => toggleQuestionHiding(question.id)}
+          pressed={!!answer?.hideQuestion}
+          untoggledIcon={<FiEyeOff size="size-5" />}
+          toggledIcon={<FiEyeOff size="size-5" />}
+          size="sm"
         >
           {t("question.hide")}
-        </ToggleButton>
+        </Toggle>
       </div>
       {question.questionType === "yes-no" ? (
         <YesNoQuestion

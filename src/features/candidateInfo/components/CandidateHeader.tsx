@@ -19,7 +19,7 @@ export const CandidateIntroHeader = (
       </div>
       {candidate.organization ||
         (candidate.creator && (
-          <p className="m-0 font-bold text-xs">
+          <p className="m-0 font-bold text-xs leading-normal">
             {t("candidate.createdBy")}{" "}
             {candidate.organization || candidate.creator}
           </p>
