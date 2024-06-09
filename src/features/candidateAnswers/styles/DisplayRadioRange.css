@@ -19,6 +19,7 @@
 }
 
 .radio-display__option {
+  position: relative;
   display: flex;
   flex-direction: column;
   place-items: center start;
@@ -41,8 +42,10 @@
   position: absolute;
   justify-self: flex-start;
   display: flex;
+  flex-direction: row;
   bottom: calc(100% + var(--padding));
   justify-content: center;
+  text-align: center;
 }
 
 .radio-display__option:first-child {
@@ -65,8 +68,8 @@
 
 .radio-display .option__indicator {
   cursor: pointer;
-  position: relative;
-  top: -1.75rem;
+  position: absolute;
+  top: 0.25rem;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
