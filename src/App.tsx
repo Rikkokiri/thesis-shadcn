@@ -24,11 +24,11 @@ function App() {
           className="flex flex-col bg-gray-5 dark:bg-gray-90 py-[21px] px-0"
         >
           <div className="flex flex-row justify-center wrap py-1 px-4 text-sm">
-            <Link className="py-3 px-6 font-bold underline" to="/">
+            <Link className="py-3 px-6 font-bold" to="/">
               {t("footer.frontPageLink")}
             </Link>
             <a
-              className="py-3 px-6 font-bold underline"
+              className="py-3 px-6 font-bold"
               href="https://vaalit.yle.fi/vaalikone/presidentinvaali2024"
             >
               Ylen vaalikone presidentivaaleissa 2024
