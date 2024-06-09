@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: var(--radio-range-max-width);
+  max-width: 343px;
 }
 
 /* Line behind radio options */
@@ -18,28 +18,6 @@
   left: 1rem;
 }
 
-.radio-range__option {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  place-items: center start;
-  width: 2rem;
-  text-align: center;
-}
-
-.radio-range label {
-  font-size: 0.75rem;
-  margin-top: 0.75rem;
-}
-
-.radio-range__option:first-child {
-  text-align: left;
-}
-
-.radio-range__option:last-child {
-  text-align: right;
-}
-
 @keyframes scale-option {
   0%,
   100% {
@@ -49,16 +27,6 @@
   50% {
     transform: scale(1.5);
   }
-}
-
-.radio-range input[type="radio"] {
-  appearance: none;
-  cursor: pointer;
-  border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
-  background-color: var(--radio-background);
-  margin: 0;
 }
 
 .radio-range .option__indicator {

@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: var(--radio-range-max-width);
+  max-width: 343px;
 }
 
 /* Line behind radio options */

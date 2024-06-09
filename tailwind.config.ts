@@ -60,6 +60,7 @@ const config = {
         input: "hsl(var(--input))",
         modal: "hsl(var(--modal))",
         backdrop: "hsl(var(--backdrop))",
+        radio: "hsl(var(--radio))",
         ring: "hsl(var(--ring))",
         body: "hsl(var(--body))",
         logo: "hsl(var(--yle-logo))",
@@ -135,18 +136,13 @@ const config = {
         "auto-no-shrink": "1 0 auto",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        "scale-option": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.5)" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "scale-option": "scale-option 0.3s ease 0s 1",
       },
     },
   },
