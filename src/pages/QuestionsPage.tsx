@@ -19,7 +19,7 @@ export const QuestionsPage = () => {
     <>
       {inView && <CandidatesMatch />}
       {/* TODO: Top level section element { background-color: var(--page-header-bg); } */}
-      <section className="flex flex-col w-full items-center py-8 px-0 text-center">
+      <section className="bg-background flex flex-col w-full items-center py-8 px-0 text-center">
         <p className="text-sm font-bold text-heading m-0">
           {t("electionName")}
         </p>
@@ -36,7 +36,7 @@ export const QuestionsPage = () => {
             });
           }}
         >
-          <FiArrowDown />
+          <FiArrowDown className="size-5" />
           {t("questionPage.findYourCandidate")}
         </Button>
         <div ref={questionsStartRef} />

@@ -21,6 +21,7 @@
     --gray-80: 210, 5%, 17%;
     --gray-90: 210, 6%, 13%;
     --gray-95: 210, 5%, 8%;
+    /* TODO: Use opacity modifiers instead? */
     --black-9: 0, 0%, 0%, 0.09;
     --black-15: 0, 0%, 0%, 0.15;
     --black-19: 0, 0%, 0%, 0.19;
@@ -33,8 +34,8 @@
     --white-71: 0, 0%, 100%, 0.71;
 
     /* Semantic colors: light theme */
-    --disagree: 345, 68%, 50%;
-    --agree: 158, 93%, 27%;
+    --error: 345, 68%, 50%;
+    --success: 158, 93%, 27%;
 
     /* Semantic colors: dark theme */
     --live-red: 345, 89%, 48%;
@@ -51,10 +52,17 @@
     --card: var(--white);
     --card-foreground: var(--blue-black);
 
-    --primary: var(--blue-black); /* Slate: 222.2 47.4% 11.2%; */
-    --primary-foreground: 210 40% 98%;
+    --modal: var(--white);
+    --backdrop: var(--black-41);
 
-    --secondary: 210 40% 96.1%;
+    --primary: var(--blue-black);
+    --primary-foreground: var(--white);
+
+    --agree: var(--error);
+    --disagree: var(--success);
+
+    /* TODO: Delete */
+    --secondary: var(--gray-5);
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -65,7 +73,7 @@
 
     --border: var(--blue-black);
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: var(--blue-black);
 
     --radius: 0.5rem;
   }
@@ -75,34 +83,37 @@
   */
   .dark {
     --body: var(--black);
-    --background: var(--blue-black); /* 222.2 84% 4.9%; */
+    --background: var(--blue-black);
     --foreground: var(--gray-5);
     --heading: var(--white);
 
     --card: var(--blue-black);
     --card-foreground: var(--gray-5);
 
+    --modal: var(--gray-90);
+    --backdrop: var(--black-70);
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: var(--blue-black);
-    --primary-foreground: var(--gray-5); /* Text primary */
+    --primary: var(--gray-5);
+    /* Foreground to pair with --primary */
+    --primary-foreground: var(--blue-black);
 
+    --agree: var(--green-bright);
+    --disagree: var(--live-red);
+
+    /* TODO: Delete */
     --secondary: var(--gray-5); /* */
     --secondary-foreground: var(--blue-black); /* Text negative */
 
+    /* TODO: Delete */
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: var(--gray-5);
   }
 }
 
@@ -112,6 +123,15 @@
   }
   body {
     @apply bg-body text-foreground;
+  }
+
+  a {
+    @apply underline;
+
+    &:hover,
+    &:visited {
+      @apply text-inherit;
+    }
   }
 }
 

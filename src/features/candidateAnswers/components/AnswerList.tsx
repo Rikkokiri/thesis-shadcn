@@ -2,20 +2,9 @@ import { useState } from "react";
 import { useCandidateAnswers } from "../hooks/useCandidateAnswers";
 import { AnswerCard } from "./AnswerCard";
 import { SectionCard } from "@components/SectionCard.tsx/SectionCard";
-import { ToggleButton } from "@components/ToggleButton/ToggleButton";
+import { Toggle } from "@/components/ui/toggle";
 import { FiMinus } from "react-icons/fi";
 import { FiPlus } from "react-icons/fi";
-
-/*
-TODO: Make sure button matches following styles:
-.answer-list__expand-button.toggled {
-  background-color: transparent;
-}
-
-.answer-list__expand-button:hover {
-  background-color: var(--button-outline-bg-hover);
-}
-*/
 
 export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
   const { t, questions, candidateAnswers, candidateImgSrc } = props;
@@ -44,16 +33,15 @@ export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
         </div>
         <div className="bg-gray-30 dark:bg-gray-60 my-0 mx-6 h-px"></div>
         <div className="answer-list__expand p-6 flex flex-row justify-center items-center w-full">
-          <ToggleButton
-            isToggled={isExpanded}
-            onClick={() => setExpanded(!isExpanded)}
-            toggledIcon={<FiMinus />}
-            untoggledIcon={<FiPlus />}
-            iconSize={24}
-            className="answer-list__expand-button"
+          <Toggle
+            pressed={isExpanded}
+            onPressedChange={() => setExpanded(!isExpanded)}
+            toggledIcon={<FiMinus className="size-6" />}
+            untoggledIcon={<FiPlus className="size-6" />}
+            variant="outlineGhost"
           >
             {isExpanded ? t("showFewer") : t("showMore")}
-          </ToggleButton>
+          </Toggle>
         </div>
       </SectionCard>
     </article>

@@ -1,22 +1,11 @@
-import { ToggleButton } from "@components/ToggleButton/ToggleButton";
+import { Toggle } from "@/components/ui/toggle";
 import { useState } from "react";
 import { FiEyeOff } from "react-icons/fi";
 import { FiEye } from "react-icons/fi";
 import { MatchButton } from "./MatchButton";
 import { useCandidatesMatch } from "../hooks/useCandidatesMatch";
 import { MatchWithDetails } from "../types";
-
-/* TODO: Make sure toggle button matches following styles:
-.button.match-bar__toggle {
-  border-radius: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.match-bar__toggle.toggled-transparent {
-  background-color: transparent;
-}
-*/
+import { CandidateModal } from "./CandidateModal";
 
 export const CandidatesMatchBar = (
   props: ReturnType<typeof useCandidatesMatch>,
@@ -37,19 +26,19 @@ export const CandidatesMatchBar = (
                 <MatchPlaceholder key={index} />
               ))
             : topFourCandidates.map((candidate: MatchWithDetails) => (
-                <MatchButton candidate={candidate} key={candidate.id} />
+                <CandidateModal key={candidate.id} candidate={candidate}>
+                  <MatchButton candidate={candidate} />
+                </CandidateModal>
               ))}
         </div>
-        <ToggleButton
-          isToggled={resultsHidden}
+        <Toggle
+          pressed={resultsHidden}
           onClick={() => setResultsHidden(!resultsHidden)}
-          untoggledIcon={<FiEye />}
-          toggledIcon={<FiEyeOff />}
+          untoggledIcon={<FiEye className="size-6" />}
+          toggledIcon={<FiEyeOff className="size-6" />}
           variant="ghost"
-          size="medium"
-          iconSize={24}
+          size="iconMd"
           className="match-bar__toggle"
-          toggledClassName="toggled-transparent"
         />
       </div>
     </header>
