@@ -51,6 +51,7 @@ const config = {
       DEFAULT: "4px",
       md: "6px",
       lg: "8px",
+      button: "100px",
       full: "9999px",
       50: "50%",
     },
@@ -74,11 +75,6 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-        },
-        /* TODO: Delete */
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",

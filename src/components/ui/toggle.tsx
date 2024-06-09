@@ -9,7 +9,7 @@ const hoverBg = "hover:bg-black-9 dark:hover:bg-white-17";
 
 const toggleVariants = cva(
   `
-  inline-flex gap-2 items-center justify-center rounded-full text-base font-bold
+  inline-flex gap-2 items-center justify-center rounded-button text-base font-bold
   ring-offset-background transition-colors
   focus:outline-none
   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
@@ -30,7 +30,7 @@ const toggleVariants = cva(
       size: {
         default: "h-12 py-2 px-4",
         sm: "h-8 text-xs py-1.5 pr-3 pl-3.5 text-nowrap",
-        lg: "h-11 rounded-full px-8",
+        lg: "h-11 rounded-button px-8",
         iconMd: "px-3 py-1 min-h-12 w-12 rounded",
       },
     },

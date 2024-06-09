@@ -65,9 +65,6 @@
     --secondary: var(--gray-5);
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
@@ -108,10 +105,6 @@
     --secondary: var(--gray-5); /* */
     --secondary-foreground: var(--blue-black); /* Text negative */
 
-    /* TODO: Delete */
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --radio: var(--gray-60);
@@ -140,5 +133,9 @@
 @layer utilities {
   .clip-arrow-small {
     clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+
+  .clip-circle-half {
+    clip-path: polygon(-1px -1px, 50% -1px, 50% 100%, -1px 100%);
   }
 }
