@@ -17,7 +17,7 @@ const RadioGroup = React.forwardRef<
       ref={ref}
     >
       {/* Line behind the radio scale */}
-      <span className="absolute h-1 bg-radio w-full mx-1.25rem top-[0.875rem]" />
+      <span className="absolute h-1 bg-radio w-full mx-1.3rem top-[0.875rem]" />
       {props.children}
     </RadioGroupPrimitive.Root>
   );
