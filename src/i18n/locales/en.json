@@ -16,7 +16,7 @@
   },
   "candidateSections": {
     "answers": "Candidate's answers",
-    "backgroundInfo": "Candidate's infromation",
+    "backgroundInfo": "Candidate's information",
     "electionPromises": "Election promises"
   },
   "candidates": "Candidates",
@@ -30,10 +30,15 @@
     "subtitle": "The React component library election is on the way. Find out more about the candidates with the election compass.",
     "title": "Welcome to the election compass"
   },
+  "libraryName": "shadcn/ui",
   "navigation": {
     "frontPage": "Front page",
     "menu": "Menu",
     "search": "Search"
+  },
+  "pageTitle": {
+    "candidatePage": "Candidate {{candidate}} - Component library election compass",
+    "default": "Election compass - Built with {{library}}"
   },
   "question": {
     "hide": "Hide question",
