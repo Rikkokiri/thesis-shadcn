@@ -12,7 +12,7 @@ export const PromiseList = (props: IPromiseListProps) => {
           <div className="bg-primary text-primary-foreground size-6 text-xs flex justify-center items-center shrink-0 rounded-50 font-black">
             {index + 1}
           </div>
-          <div className="pb-[5px]">{item}</div>
+          <div className="pb-[5px] font-normal">{item}</div>
         </li>
       ))}
     </ol>
