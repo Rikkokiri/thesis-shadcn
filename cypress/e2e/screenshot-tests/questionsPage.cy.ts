@@ -1,11 +1,14 @@
 /// <reference types="cypress" />
 import en from "../../../src/i18n/locales/en.json";
+import { themes } from "../../support/commands";
 
 describe("Questions page", () => {
-  it("matches the screenshot", () => {
-    cy.visit("/questions");
-    cy.contains(en.questionPage.description);
+  themes.forEach((theme) => {
+    it(`matches the screenshot (in ${theme} theme)`, () => {
+      cy.visitInTheme("/questions", theme);
+      cy.contains(en.questionPage.description);
 
-    cy.compareSnapshot("initial-questions-page");
+      cy.compareSnapshotInTheme("initial-questions-page", theme);
+    });
   });
 });

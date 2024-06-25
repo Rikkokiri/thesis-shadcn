@@ -1,17 +1,20 @@
 /// <reference types="cypress" />
 import en from "../../../src/i18n/locales/en.json";
+import { themes } from "../../support/commands";
 
 describe("Candidate pages", () => {
-  it("matches the screenshot", () => {
-    cy.visit("/candidates/chakra");
-    cy.contains(en.candidate.creator);
-    cy.contains("Chakra UI");
+  themes.forEach((theme) => {
+    it(`matches the screenshot (in ${theme} theme)`, () => {
+      cy.visitInTheme("/candidates/chakra", theme);
+      cy.contains(en.candidate.creator);
+      cy.contains("Chakra UI");
 
-    cy.compareSnapshot("candidate-chakra");
+      cy.compareSnapshotInTheme("candidate-chakra", theme);
 
-    cy.contains(en.showMore).click();
-    cy.contains(en.showFewer);
+      cy.contains(en.showMore).click();
+      cy.contains(en.showFewer);
 
-    cy.compareSnapshot("candidate-chakra-show-more");
+      cy.compareSnapshotInTheme("candidate-chakra-show-more", theme);
+    });
   });
 });
