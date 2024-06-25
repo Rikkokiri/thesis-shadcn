@@ -86,7 +86,6 @@
 
 .radio-display .candidate-answer {
   z-index: 2;
-  background-color: cyan;
 }
 
 .radio-display .disagree .option__indicator {

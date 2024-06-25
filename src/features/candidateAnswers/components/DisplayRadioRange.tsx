@@ -26,7 +26,7 @@ export const DisplayRadioRange = (props: IDisplayRadioRangeProps) => {
 
   return (
     <div className="radio-display">
-      {props.options.map((option, index) => {
+      {props.options.map((option) => {
         const optionClass = option.optionClassName ?? "";
 
         return (
@@ -56,7 +56,7 @@ export const DisplayRadioRange = (props: IDisplayRadioRangeProps) => {
                 )}
               </div>
             )}
-            <label key={index}>{option.label}</label>
+            <label>{option.label}</label>
             {userAnswer === option.value && (
               <SmallSpeechBubble
                 content={t("question.yourAnswer")}
