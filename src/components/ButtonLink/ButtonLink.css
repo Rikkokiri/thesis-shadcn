@@ -16,6 +16,10 @@
   outline: none;
 }
 
+.btn-link:hover {
+  text-decoration: none;
+}
+
 /* TODO: Define as base style? */
 .btn-link:focus-visible {
   outline: 2px solid var(--focus-outline-primary);
