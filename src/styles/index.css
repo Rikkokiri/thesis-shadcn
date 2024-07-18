@@ -1,27 +1,5 @@
 @import "./reset.css";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* TODO: Update font family */
-  /*
-  font-synthesis: none;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
-/* body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
-a,
-a:visited,
-a:hover {
-  color: inherit;
-  text-decoration: underline;
-}
-
-#root {
-  height: 100%;
-} */
